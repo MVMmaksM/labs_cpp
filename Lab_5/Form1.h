@@ -33,6 +33,7 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::TabPage^ tabPageTask_6_1;
 		private: System::Windows::Forms::TabPage^ tabPageTask_6_2;
 		private: System::Windows::Forms::TabPage^ tabPageTask_6_3;
+		private: System::Windows::Forms::TabPage^ tabPageTask_6_4;
 			   //group_boxes
 		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_1;
 		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_1;
@@ -40,6 +41,8 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_2;
 		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_3;
 		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_3;
+		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_4;
+		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_4;
 			   //labels
 		private: System::Windows::Forms::Label^ labelSTask_6_1;
 		private: System::Windows::Forms::Label^ labelNTask_6_1;		
@@ -48,6 +51,8 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::Label^ labelS1Task_6_2;
 		private: System::Windows::Forms::Label^ labelS2Task_6_2;
 		private: System::Windows::Forms::Label^ labelStringWithSpacesTask_6_3;		
+		private: System::Windows::Forms::Label^ labelStrTask_6_4;
+		private: System::Windows::Forms::Label^ labelKTask_6_4;
 			   //text_boxes
 		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_1;
 		private: System::Windows::Forms::TextBox^ txtBxInputSTask_6_1;
@@ -62,10 +67,15 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_3;
 		private: System::Windows::Forms::TextBox^ txtBxInputStringWithSpacesTask_6_3;
 		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_3;
+		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxInputStrTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxInputKTask_6_4;
 			   //buttons
 		private: System::Windows::Forms::Button^ btnGetResultConvertStringTask_6_1;	
 		private: System::Windows::Forms::Button^ btnGetNewStringTask_6_2;		
 		private: System::Windows::Forms::Button^ btnDeleteSpacesTask_6_3;
+		private: System::Windows::Forms::Button^ btnEncryptStrTask_6_4;
 
 		protected:
 
@@ -87,6 +97,8 @@ namespace CppCLRWinFormsProject
 			this->tabPageTask_6_2->SuspendLayout();
 			this->tabPageTask_6_3 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPageTask_6_3->SuspendLayout();
+			this->tabPageTask_6_4 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPageTask_6_4->SuspendLayout();
 			//group_boxes
 			this->groupBoxDescriptionTask_6_1 = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBoxDescriptionTask_6_1->SuspendLayout();
@@ -100,6 +112,10 @@ namespace CppCLRWinFormsProject
 			this->groupBoxDescriptionTask_6_3->SuspendLayout();
 			this->groupBoxSolutionTask_6_3 = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBoxSolutionTask_6_3->SuspendLayout();
+			this->groupBoxDescriptionTask_6_4 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBoxDescriptionTask_6_4->SuspendLayout();
+			this->groupBoxSolutionTask_6_4 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBoxSolutionTask_6_4->SuspendLayout();
 			//labels			
 			this->labelNTask_6_1 = (gcnew System::Windows::Forms::Label());
 			this->labelSTask_6_1 = (gcnew System::Windows::Forms::Label());
@@ -108,6 +124,8 @@ namespace CppCLRWinFormsProject
 			this->labelS1Task_6_2 = (gcnew System::Windows::Forms::Label());
 			this->labelS2Task_6_2 = (gcnew System::Windows::Forms::Label());
 			this->labelStringWithSpacesTask_6_3 = (gcnew System::Windows::Forms::Label());		
+			this->labelStrTask_6_4 = (gcnew System::Windows::Forms::Label());
+			this->labelKTask_6_4 = (gcnew System::Windows::Forms::Label());
 			//text_boxes
 			this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());		
 			this->txtBxInputNTask_6_1 = (gcnew System::Windows::Forms::TextBox());
@@ -120,12 +138,17 @@ namespace CppCLRWinFormsProject
 			this->txtBxInputS2Task_6_2 = (gcnew System::Windows::Forms::TextBox());
 			this->txtBxResultTask_6_2 = (gcnew System::Windows::Forms::TextBox());
 			this->txtBxDescriptionTask_6_3 = (gcnew System::Windows::Forms::TextBox());
+			this->txtBxDescriptionTask_6_4 = (gcnew System::Windows::Forms::TextBox());
 			this->txtBxInputStringWithSpacesTask_6_3 = (gcnew System::Windows::Forms::TextBox());
 			this->txtBxResultTask_6_3 = (gcnew System::Windows::Forms::TextBox());
+			this->txtBxResultTask_6_4 = (gcnew System::Windows::Forms::TextBox());
+			this->txtBxInputStrTask_6_4 = (gcnew System::Windows::Forms::TextBox());
+			this->txtBxInputKTask_6_4 = (gcnew System::Windows::Forms::TextBox());
 			//buttons
 			this->btnGetResultConvertStringTask_6_1 = (gcnew System::Windows::Forms::Button());			
 			this->btnGetNewStringTask_6_2 = (gcnew System::Windows::Forms::Button());		
 			this->btnDeleteSpacesTask_6_3 = (gcnew System::Windows::Forms::Button());
+			this->btnEncryptStrTask_6_4 = (gcnew System::Windows::Forms::Button());
 
 			this->SuspendLayout();
 
@@ -133,6 +156,7 @@ namespace CppCLRWinFormsProject
 			this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_1);
 			this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_2);
 			this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_3);
+			this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_4);
 			this->tabControl_lab_1->Location = System::Drawing::Point(0, 1);
 			this->tabControl_lab_1->Name = L"tabControl";
 			this->tabControl_lab_1->SelectedIndex = 0;
@@ -315,6 +339,20 @@ namespace CppCLRWinFormsProject
 			this->labelS2Task_6_2->Size = System::Drawing::Size(207, 13);
 			this->labelS2Task_6_2->TabIndex = 0;
 			this->labelS2Task_6_2->Text = L"Введите строку S2";
+			// labelStrTask_6_4			 
+			this->labelStrTask_6_4->AutoSize = true;
+			this->labelStrTask_6_4->Location = System::Drawing::Point(280, 15);
+			this->labelStrTask_6_4->Name = L"label4";
+			this->labelStrTask_6_4->Size = System::Drawing::Size(207, 13);
+			this->labelStrTask_6_4->TabIndex = 0;
+			this->labelStrTask_6_4->Text = L"Введите строку-предложение на русском языке";
+			// labelKTask_6_4			 
+			this->labelKTask_6_4->AutoSize = true;
+			this->labelKTask_6_4->Location = System::Drawing::Point(5, 90);
+			this->labelKTask_6_4->Name = L"labelKTask_6_4";
+			this->labelKTask_6_4->Size = System::Drawing::Size(207, 13);
+			this->labelKTask_6_4->TabIndex = 0;
+			this->labelKTask_6_4->Text = L"Введите число k (0 < k < 10)";
 			// groupBoxDescriptionTask_6_2				
 			this->groupBoxDescriptionTask_6_2->Controls->Add(this->txtBxDescriptionTask_6_2);
 			this->groupBoxDescriptionTask_6_2->Location = System::Drawing::Point(3, 0);
@@ -346,6 +384,16 @@ namespace CppCLRWinFormsProject
 			this->tabPageTask_6_3->TabIndex = 1;
 			this->tabPageTask_6_3->Text = L"Task_6.3";
 			this->tabPageTask_6_3->UseVisualStyleBackColor = true;
+			// tabPageTask_6_4	
+			this->tabPageTask_6_4->Controls->Add(this->groupBoxDescriptionTask_6_4);
+			this->tabPageTask_6_4->Controls->Add(this->groupBoxSolutionTask_6_4);
+			this->tabPageTask_6_4->Location = System::Drawing::Point(4, 22);
+			this->tabPageTask_6_4->Name = L"tabPageTask_6_4";
+			this->tabPageTask_6_4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPageTask_6_4->Size = System::Drawing::Size(840, 442);
+			this->tabPageTask_6_4->TabIndex = 1;
+			this->tabPageTask_6_4->Text = L"Task_6.4";
+			this->tabPageTask_6_4->UseVisualStyleBackColor = true;
 			//groupBoxDescriptionTask_6_3
 			this->groupBoxDescriptionTask_6_3->BackColor = System::Drawing::Color::Transparent;
 			this->groupBoxDescriptionTask_6_3->Controls->Add(this->txtBxDescriptionTask_6_3);
@@ -355,6 +403,15 @@ namespace CppCLRWinFormsProject
 			this->groupBoxDescriptionTask_6_3->TabIndex = 0;
 			this->groupBoxDescriptionTask_6_3->TabStop = false;
 			this->groupBoxDescriptionTask_6_3->Text = L"Описание задачи";
+			//groupBoxDescriptionTask_6_4
+			this->groupBoxDescriptionTask_6_4->BackColor = System::Drawing::Color::Transparent;
+			this->groupBoxDescriptionTask_6_4->Controls->Add(this->txtBxDescriptionTask_6_4);
+			this->groupBoxDescriptionTask_6_4->Location = System::Drawing::Point(3, 0);
+			this->groupBoxDescriptionTask_6_4->Name = L"groupBox";
+			this->groupBoxDescriptionTask_6_4->Size = System::Drawing::Size(834, 70);
+			this->groupBoxDescriptionTask_6_4->TabIndex = 0;
+			this->groupBoxDescriptionTask_6_4->TabStop = false;
+			this->groupBoxDescriptionTask_6_4->Text = L"Описание задачи";
 			//textBoxDescriptionTask6_3				 
 			this->txtBxDescriptionTask_6_3->BackColor = System::Drawing::SystemColors::ControlLightLight;
 			this->txtBxDescriptionTask_6_3->BorderStyle = System::Windows::Forms::BorderStyle::None;
@@ -366,6 +423,21 @@ namespace CppCLRWinFormsProject
 			this->txtBxDescriptionTask_6_3->TabIndex = 0;
 			this->txtBxDescriptionTask_6_3->Text = L" Дана строка-предложение, содержащая избыточные пробелы. Преобразовать" 
 													+ " ее так, чтобы между словами был ровно один пробел.";
+			//txtBxDescriptionTask_6_4				 
+			this->txtBxDescriptionTask_6_4->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->txtBxDescriptionTask_6_4->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->txtBxDescriptionTask_6_4->Location = System::Drawing::Point(6, 19);
+			this->txtBxDescriptionTask_6_4->Multiline = true;
+			this->txtBxDescriptionTask_6_4->Name = L"textBoxDescriptionTask6_3";
+			this->txtBxDescriptionTask_6_4->ReadOnly = true;
+			this->txtBxDescriptionTask_6_4->Size = System::Drawing::Size(811, 40);
+			this->txtBxDescriptionTask_6_4->TabIndex = 0;
+			this->txtBxDescriptionTask_6_4->Text = L"Дана строка-предложение на русском языке и число k (0 < k < 10)." 
+													+" Зашифровать строку, выполнив циклическую замену каждой буквы на букву"
+													+" того же регистра, расположенную в алфавите на k - й позиции после шифруемой"
+													+" буквы(например, для k = 2 «А» перейдет в «В», «а» — в «в», «Б» — в «Г», «я»"
+													+" — в «б» и т.д.).Букву «ё» в алфавите не учитывать, знаки препинания и"
+													+" пробелы не изменять.";
 			//groupBoxSolutionTask_6_3
 			this->groupBoxSolutionTask_6_3->Controls->Add(this->labelStringWithSpacesTask_6_3);		
 			this->groupBoxSolutionTask_6_3->Controls->Add(this->txtBxInputStringWithSpacesTask_6_3);	
@@ -377,6 +449,19 @@ namespace CppCLRWinFormsProject
 			this->groupBoxSolutionTask_6_3->TabIndex = 1;
 			this->groupBoxSolutionTask_6_3->TabStop = false;
 			this->groupBoxSolutionTask_6_3->Text = L"Решение";
+			//groupBoxSolutionTask_6_4
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->labelStrTask_6_4);
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxInputStrTask_6_4);
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxInputKTask_6_4);
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->labelKTask_6_4);
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxResultTask_6_4);
+			this->groupBoxSolutionTask_6_4->Controls->Add(this->btnEncryptStrTask_6_4);
+			this->groupBoxSolutionTask_6_4->Location = System::Drawing::Point(3, 70);
+			this->groupBoxSolutionTask_6_4->Name = L"groupBox4";
+			this->groupBoxSolutionTask_6_4->Size = System::Drawing::Size(834, 380);
+			this->groupBoxSolutionTask_6_4->TabIndex = 1;
+			this->groupBoxSolutionTask_6_4->TabStop = false;
+			this->groupBoxSolutionTask_6_4->Text = L"Решение";
 			//labelMTask_6_3
 			this->labelStringWithSpacesTask_6_3->AutoSize = true;
 			this->labelStringWithSpacesTask_6_3->Location = System::Drawing::Point(260, 20);
@@ -384,20 +469,38 @@ namespace CppCLRWinFormsProject
 			this->labelStringWithSpacesTask_6_3->Size = System::Drawing::Size(207, 13);
 			this->labelStringWithSpacesTask_6_3->TabIndex = 0;
 			this->labelStringWithSpacesTask_6_3->Text = L"Введите строку, содержащую избыточные пробелы";		
-			//txtBxInputMTask_6_3				
+			//txtBxInputStringWithSpacesTask_6_3				
 			this->txtBxInputStringWithSpacesTask_6_3->Location = System::Drawing::Point(7, 35);
 			this->txtBxInputStringWithSpacesTask_6_3->Name = L"txtBxInputStringWithSpacesTask_6_3";
 			this->txtBxInputStringWithSpacesTask_6_3->Size = System::Drawing::Size(820, 50);
 			this->txtBxInputStringWithSpacesTask_6_3->TabIndex = 3;
 			this->txtBxInputStringWithSpacesTask_6_3->AcceptsReturn = true;
 			this->txtBxInputStringWithSpacesTask_6_3->Multiline = true;
+			//txtBxInputStrTask_6_4				
+			this->txtBxInputStrTask_6_4->Location = System::Drawing::Point(7, 35);
+			this->txtBxInputStrTask_6_4->Name = L"txtBxInputStrTask_6_4";
+			this->txtBxInputStrTask_6_4->Size = System::Drawing::Size(820, 50);
+			this->txtBxInputStrTask_6_4->TabIndex = 3;
+			this->txtBxInputStrTask_6_4->AcceptsReturn = true;
+			this->txtBxInputStrTask_6_4->Multiline = true;
+			//txtBxInputKTask_6_4				
+			this->txtBxInputKTask_6_4->Location = System::Drawing::Point(7, 110);
+			this->txtBxInputKTask_6_4->Name = L"txtBxInputKTask_6_4";
+			this->txtBxInputKTask_6_4->Size = System::Drawing::Size(140, 50);
+			this->txtBxInputKTask_6_4->TabIndex = 3;
 			//txtBxResultTask_6_3				
 			this->txtBxResultTask_6_3->Location = System::Drawing::Point(6, 138);
 			this->txtBxResultTask_6_3->Multiline = true;
 			this->txtBxResultTask_6_3->Name = L"txtBxResultTask_6_3";
 			this->txtBxResultTask_6_3->Size = System::Drawing::Size(822, 237);
-			this->txtBxResultTask_6_3->TabIndex = 4;			
-			//btnGetResultY2Task_6_3
+			this->txtBxResultTask_6_3->TabIndex = 4;	
+			//txtBxResultTask_6_4				
+			this->txtBxResultTask_6_4->Location = System::Drawing::Point(6, 140);
+			this->txtBxResultTask_6_4->Multiline = true;
+			this->txtBxResultTask_6_4->Name = L"txtBxResultTask_6_4";
+			this->txtBxResultTask_6_4->Size = System::Drawing::Size(822, 230);
+			this->txtBxResultTask_6_4->TabIndex = 4;
+			//btnDeleteSpacesTask_6_3
 			this->btnDeleteSpacesTask_6_3->Location = System::Drawing::Point(5, 100);
 			this->btnDeleteSpacesTask_6_3->Name = L"btnDeleteSpacesTask_6_3";
 			this->btnDeleteSpacesTask_6_3->Size = System::Drawing::Size(229, 23);
@@ -405,6 +508,14 @@ namespace CppCLRWinFormsProject
 			this->btnDeleteSpacesTask_6_3->Text = L"Удалить лишние пробелы";
 			this->btnDeleteSpacesTask_6_3->UseVisualStyleBackColor = true;
 			this->btnDeleteSpacesTask_6_3->Click += gcnew System::EventHandler(this, &Form1::btnDeleteSpacesTask_6_3_Click);
+			//btnEncryptStrTask_6_4
+			this->btnEncryptStrTask_6_4->Location = System::Drawing::Point(180, 108);
+			this->btnEncryptStrTask_6_4->Name = L"btnEncryptStrTask_6_4";
+			this->btnEncryptStrTask_6_4->Size = System::Drawing::Size(200, 23);
+			this->btnEncryptStrTask_6_4->TabIndex = 3;
+			this->btnEncryptStrTask_6_4->Text = L"Зашифровать строку";
+			this->btnEncryptStrTask_6_4->UseVisualStyleBackColor = true;
+			this->btnEncryptStrTask_6_4->Click += gcnew System::EventHandler(this, &Form1::btnEncryptStrTask_6_4_Click);
 			// 
 			// Form1
 			// 
@@ -606,6 +717,101 @@ namespace CppCLRWinFormsProject
 		private: System::Boolean IsNullOrSpace(String^ str)
 		{
 			return String::IsNullOrWhiteSpace(str);
+		}
+		#pragma endregion
+
+		#pragma region Task_6_4
+		System::Void btnEncryptStrTask_6_4_Click(System::Object^ sender, System::EventArgs^ e) 
+		{
+			if (!isValidateK(txtBxInputKTask_6_4->Text))
+				return;
+
+			int k = Convert::ToInt32(txtBxInputKTask_6_4->Text);
+			String^ str = txtBxInputStrTask_6_4->Text;
+
+			if(!isValidateStr(str))
+				return;		
+
+			cli::array<Char>^ arrayChar = str->ToCharArray();
+
+			for (int i = 0; i < arrayChar->Length; i++)
+			{	
+				//отсекаем символы
+				if (arrayChar[i] >= 32 && arrayChar[i] <= 64)
+					continue;
+
+				//строчные буквы если переполнение
+				if (arrayChar[i] >= 1072 && arrayChar[i] <= 1103) 
+				{
+					if ((arrayChar[i] + k) > 1103)
+					{
+						arrayChar[i] = 1071 + Math::Abs(1103 - arrayChar[i] + k);
+						continue;
+					}
+				}				
+
+				//заглавные буквы если переполнение
+				if (arrayChar[i] >= 1040 && arrayChar[i] <= 1071) 
+				{
+					if ((arrayChar[i] + k) > 1071)
+					{
+						arrayChar[i] = 1039 + Math::Abs(1071 - arrayChar[i] + k);
+						continue;
+					}
+				}	
+
+				arrayChar[i] = arrayChar[i] + k;
+			}
+
+			String^ result = gcnew String(arrayChar);
+			txtBxResultTask_6_4->Text = result;
+		}
+
+		Boolean isValidateK(String^ k)
+		{
+			int parseResult;
+
+			if (String::IsNullOrWhiteSpace(k))
+			{
+				MessageBox::Show("Необходимо ввести число k", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return false;
+			}
+
+			if (!int::TryParse(k, parseResult))
+			{
+				MessageBox::Show("Число k должно быть целым числом", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return false;
+			}
+
+			if (parseResult < 0 || parseResult > 10)
+			{
+				MessageBox::Show("Число k должно быть больше 0  и меньше 10", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return false;
+			}
+
+			return true;
+		}
+
+		Boolean isValidateStr(String^ str)
+		{
+			if (String::IsNullOrWhiteSpace(str))
+			{
+				MessageBox::Show("Нужно ввести строку", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return false;
+			}
+
+			for (int i = 0; i < str->Length; i++)
+			{
+				int code = Convert::ToInt64(str[i]);				
+
+				if ((code > 65 && code < 1040) || code > 1103)
+				{
+					MessageBox::Show("Нужно ввести строку на русском языке без буквы \"ё\"", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+					return false;
+				}
+			}
+
+			return true;
 		}
 		#pragma endregion
 	};
