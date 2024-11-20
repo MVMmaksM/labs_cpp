@@ -12,79 +12,88 @@ namespace CppCLRWinFormsProject
 
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
-	public:
-		Form1(void)
-		{
-			InitializeComponent();
-		}
-
-	protected:
-		~Form1()
-		{
-			if (components)
+		public:
+			Form1(void)
 			{
-				delete components;
+				InitializeComponent();
 			}
-		}
-		//tab_control
-	private: System::Windows::Forms::TabControl^ tabControl_lab_1;
-	protected:
-		//tab_pages
-	private: System::Windows::Forms::TabPage^ tabPageTask_6_1;
-	private: System::Windows::Forms::TabPage^ tabPageTask_6_2;
-	private: System::Windows::Forms::TabPage^ tabPageTask_6_3;
-	private: System::Windows::Forms::TabPage^ tabPageTask_6_4;
-		   //group_boxes
-	private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_1;
-	private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_1;
-	private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_2;
-	private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_2;
-	private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_3;
-	private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_3;
-	private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_4;
-	private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_4;
-		   //labels	
-	private: System::Windows::Forms::Label^ labelN1Task_6_2;
-	private: System::Windows::Forms::Label^ labelN2Task_6_2;
-	private: System::Windows::Forms::Label^ labelS1Task_6_2;
-	private: System::Windows::Forms::Label^ labelS2Task_6_2;
-	private: System::Windows::Forms::Label^ labelStringWithSpacesTask_6_3;
-	private: System::Windows::Forms::Label^ labelStrTask_6_4;
-	private: System::Windows::Forms::Label^ labelKTask_6_4;
-		   //text_boxes
-	private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_1;
-	private: System::Windows::Forms::TextBox^ txtBxInputSTask_6_1;
-	private: System::Windows::Forms::TextBox^ txtBxInputNTask_6_1;
-	private: System::Windows::Forms::TextBox^ txtBxResultTask_6_1;
-	private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxResultTask_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxInputN1Task_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxInputN2Task_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxInputS1Task_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxInputS2Task_6_2;
-	private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_3;
-	private: System::Windows::Forms::TextBox^ txtBxInputStringWithSpacesTask_6_3;
-	private: System::Windows::Forms::TextBox^ txtBxResultTask_6_3;
-	private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_4;
-	private: System::Windows::Forms::TextBox^ txtBxResultTask_6_4;
-	private: System::Windows::Forms::TextBox^ txtBxInputStrTask_6_4;
-	private: System::Windows::Forms::TextBox^ txtBxInputKTask_6_4;
-		   //buttons
-	private: System::Windows::Forms::Button^ btnGetResultConvertStringTask_6_1;
-	private: System::Windows::Forms::Button^ btnGetNewStringTask_6_2;
-	private: System::Windows::Forms::Button^ btnDeleteSpacesTask_6_3;
-	private: System::Windows::Forms::Button^ btnEncryptStrTask_6_4;
 
-	protected:
+		protected:
+			~Form1()
+			{
+				if (components)
+				{
+					delete components;
+				}
+			}
+			//tab_control
+		private: System::Windows::Forms::TabControl^ tabControl_lab_1;
+		protected:
+			//tab_pages
+		private: System::Windows::Forms::TabPage^ tabPageTask_6_1;
+		private: System::Windows::Forms::TabPage^ tabPageTask_6_2;
+		private: System::Windows::Forms::TabPage^ tabPageTask_6_3;
+		private: System::Windows::Forms::TabPage^ tabPageTask_6_4;
+			   //group_boxes
+		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_1;
+		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_1;
+		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_2;
+		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_2;
+		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_3;
+		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_3;
+		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_4;
+		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_4;
+			   //labels	
+		private: System::Windows::Forms::Label^ labelN1Task_6_2;
+		private: System::Windows::Forms::Label^ labelN2Task_6_2;
+		private: System::Windows::Forms::Label^ labelS1Task_6_2;
+		private: System::Windows::Forms::Label^ labelS2Task_6_2;
+		private: System::Windows::Forms::Label^ labelStringWithSpacesTask_6_3;
+		private: System::Windows::Forms::Label^ labelStrTask_6_4;
+		private: System::Windows::Forms::Label^ labelKTask_6_4;
+			   //text_boxes
+		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_1;
+		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_1;
+		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxInputN1Task_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxInputN2Task_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxInputS1Task_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxInputS2Task_6_2;
+		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_3;
+		private: System::Windows::Forms::TextBox^ txtBxInputStringWithSpacesTask_6_3;
+		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_3;
+		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxInputStrTask_6_4;
+		private: System::Windows::Forms::TextBox^ txtBxInputKTask_6_4;
+			   //buttons
+		private: System::Windows::Forms::Button^ btnFillArrValueTask_6_1;
+		private: System::Windows::Forms::Button^ btnGetSumValueRowWithNegativeTask_6_1;
+		private: System::Windows::Forms::Button^ btnGetMinValueInMatrixTask_6_1;
+		private: System::Windows::Forms::Button^ btnGetAverageEvenValueTask_6_1;
+		private: System::Windows::Forms::Button^ btnGetNewStringTask_6_2;
+		private: System::Windows::Forms::Button^ btnDeleteSpacesTask_6_3;
+		private: System::Windows::Forms::Button^ btnEncryptStrTask_6_4;
+		private: System::Windows::Forms::DataGridView^ dtgViewMatrix;
+				 //матрица
+		private: cli::array<int, 2>^ matrixRundomValue;
+		private: int countRowMatrix = 9;
+		private: int countColMatrix = 16;
 
-	protected:
+		protected:
 
-	private: System::ComponentModel::Container^ components;
+		protected:
+
+		private: System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 
 		   void InitializeComponent(void)
 		   {
+			   matrixRundomValue = gcnew cli::array<int, 2>(countRowMatrix, countColMatrix);
+			   this->dtgViewMatrix = (gcnew System::Windows::Forms::DataGridView());
+			   this->dtgViewMatrix->SuspendLayout();
 			   //tab_control
 			   this->tabControl_lab_1 = (gcnew System::Windows::Forms::TabControl());
 			   this->tabControl_lab_1->SuspendLayout();
@@ -123,9 +132,7 @@ namespace CppCLRWinFormsProject
 			   this->labelStrTask_6_4 = (gcnew System::Windows::Forms::Label());
 			   this->labelKTask_6_4 = (gcnew System::Windows::Forms::Label());
 			   //text_boxes
-			   this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputNTask_6_1 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputSTask_6_1 = (gcnew System::Windows::Forms::TextBox());
+			   this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());			
 			   this->txtBxResultTask_6_1 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxDescriptionTask_6_2 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxInputN1Task_6_2 = (gcnew System::Windows::Forms::TextBox());
@@ -141,7 +148,10 @@ namespace CppCLRWinFormsProject
 			   this->txtBxInputStrTask_6_4 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxInputKTask_6_4 = (gcnew System::Windows::Forms::TextBox());
 			   //buttons
-			   this->btnGetResultConvertStringTask_6_1 = (gcnew System::Windows::Forms::Button());
+			   this->btnFillArrValueTask_6_1 = (gcnew System::Windows::Forms::Button());
+			   this->btnGetSumValueRowWithNegativeTask_6_1 = (gcnew System::Windows::Forms::Button());
+			   this->btnGetMinValueInMatrixTask_6_1 = (gcnew System::Windows::Forms::Button());
+			   this->btnGetAverageEvenValueTask_6_1 = (gcnew System::Windows::Forms::Button());
 			   this->btnGetNewStringTask_6_2 = (gcnew System::Windows::Forms::Button());
 			   this->btnDeleteSpacesTask_6_3 = (gcnew System::Windows::Forms::Button());
 			   this->btnEncryptStrTask_6_4 = (gcnew System::Windows::Forms::Button());
@@ -156,7 +166,7 @@ namespace CppCLRWinFormsProject
 			   this->tabControl_lab_1->Location = System::Drawing::Point(0, 1);
 			   this->tabControl_lab_1->Name = L"tabControl";
 			   this->tabControl_lab_1->SelectedIndex = 0;
-			   this->tabControl_lab_1->Size = System::Drawing::Size(848, 468);
+			   this->tabControl_lab_1->Size = System::Drawing::Size(1400, 668);
 			   this->tabControl_lab_1->TabIndex = 0;
 			   // tabPageTask_6_1			
 			   this->tabPageTask_6_1->Controls->Add(this->groupBoxSolutionTask_6_1);
@@ -170,43 +180,68 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_1->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_1			
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxResultTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetResultConvertStringTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxInputNTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxInputSTask_6_1);
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnFillArrValueTask_6_1);		
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetSumValueRowWithNegativeTask_6_1);
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetMinValueInMatrixTask_6_1);
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetAverageEvenValueTask_6_1);
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->dtgViewMatrix);		
 			   this->groupBoxSolutionTask_6_1->Location = System::Drawing::Point(8, 100);
 			   this->groupBoxSolutionTask_6_1->Name = L"groupBox2";
-			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(823, 346);
+			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(1340, 540);
 			   this->groupBoxSolutionTask_6_1->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_1->TabStop = false;
 			   this->groupBoxSolutionTask_6_1->Text = L"Решение";
 			   // txtBxResultTask_6_1				
 			   this->txtBxResultTask_6_1->AcceptsReturn = true;
 			   this->txtBxResultTask_6_1->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			   this->txtBxResultTask_6_1->Location = System::Drawing::Point(7, 116);
+			   this->txtBxResultTask_6_1->Location = System::Drawing::Point(5, 350);
 			   this->txtBxResultTask_6_1->Multiline = true;
 			   this->txtBxResultTask_6_1->Name = L"textBoxOutputResult";
 			   this->txtBxResultTask_6_1->ReadOnly = true;
-			   this->txtBxResultTask_6_1->Size = System::Drawing::Size(810, 224);
+			   this->txtBxResultTask_6_1->Size = System::Drawing::Size(1320, 180);
 			   this->txtBxResultTask_6_1->TabIndex = 7;
 			   this->txtBxResultTask_6_1->ScrollBars = ScrollBars::Vertical;
-			   // btnGetResultConvertStringTask_6_1			
-			   this->btnGetResultConvertStringTask_6_1->Location = System::Drawing::Point(659, 63);
-			   this->btnGetResultConvertStringTask_6_1->Name = L"btnGetResultConvertStringTask_6_1";
-			   this->btnGetResultConvertStringTask_6_1->Size = System::Drawing::Size(148, 23);
-			   this->btnGetResultConvertStringTask_6_1->TabIndex = 6;
-			   this->btnGetResultConvertStringTask_6_1->Text = L"Преобразовать строку";
-			   this->btnGetResultConvertStringTask_6_1->UseVisualStyleBackColor = true;
-			   this->btnGetResultConvertStringTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetResultConvertStringTask_6_1_Click);
-			   // txtBxInputSTask_6_1			
-			   this->txtBxInputNTask_6_1->Location = System::Drawing::Point(191, 67);
-			   this->txtBxInputNTask_6_1->Name = L"textBoxInputS";
-			   this->txtBxInputNTask_6_1->Size = System::Drawing::Size(225, 20);
-			   this->txtBxInputNTask_6_1->TabIndex = 4;
-			   // txtBxInputVTask_6_1				
-			   this->txtBxInputSTask_6_1->Location = System::Drawing::Point(7, 67);
-			   this->txtBxInputSTask_6_1->Name = L"textBoxInputV";
-			   this->txtBxInputSTask_6_1->Size = System::Drawing::Size(171, 20);
-			   this->txtBxInputSTask_6_1->TabIndex = 3;		
+			   //dtgViewMatrix
+			   this->dtgViewMatrix->RowCount = countRowMatrix;
+			   this->dtgViewMatrix->ColumnCount = countColMatrix;
+			   this->dtgViewMatrix->Location = System::Drawing::Point(8, 100);
+			   this->dtgViewMatrix->Size = System::Drawing::Size(1320, 240);
+			   DataGridViewColumnCollection^ columns = dtgViewMatrix->Columns;
+
+			   for each ( DataGridViewColumn^ col in columns)
+			   {
+				   col->Width = 80;
+			   }
+			   // btnFillArrValueTask_6_1			
+			   this->btnFillArrValueTask_6_1->Location = System::Drawing::Point(5, 20);
+			   this->btnFillArrValueTask_6_1->Name = L"btnFillArrValueTask_6_1";
+			   this->btnFillArrValueTask_6_1->Size = System::Drawing::Size(148, 23);
+			   this->btnFillArrValueTask_6_1->TabIndex = 6;
+			   this->btnFillArrValueTask_6_1->Text = L"Заполнить матрицу";
+			   this->btnFillArrValueTask_6_1->UseVisualStyleBackColor = true;
+			   this->btnFillArrValueTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnFillArrValueTask_6_1_Click);	
+			   // btnGetSumValueRowWithNegativeTask_6_1			
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Location = System::Drawing::Point(5, 50);
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Name = L"btnGetSumValueRowWithNegativeTask_6_1";
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Size = System::Drawing::Size(180, 50);
+			   this->btnGetSumValueRowWithNegativeTask_6_1->TabIndex = 6;
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Text = L"Найти сумму элементов в строках, содержащих хотя бы один отрицательный элемент";
+			   this->btnGetSumValueRowWithNegativeTask_6_1->UseVisualStyleBackColor = true;
+			   // btnGetMinValueInMatrixTask_6_1			
+			   this->btnGetMinValueInMatrixTask_6_1->Location = System::Drawing::Point(180, 20);
+			   this->btnGetMinValueInMatrixTask_6_1->Name = L"btnGetMinValueInMatrixTask_6_1";
+			   this->btnGetMinValueInMatrixTask_6_1->Size = System::Drawing::Size(250, 22);
+			   this->btnGetMinValueInMatrixTask_6_1->TabIndex = 6;
+			   this->btnGetMinValueInMatrixTask_6_1->Text = L"Найти минимальный элемент матрицы";
+			   this->btnGetMinValueInMatrixTask_6_1->UseVisualStyleBackColor = true;
+			   this->btnGetMinValueInMatrixTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetMinValueInMatrixTask_6_1_Click);
+			   // btnGetAverageEvenValueTask_6_1			
+			   this->btnGetAverageEvenValueTask_6_1->Location = System::Drawing::Point(180, 50);
+			   this->btnGetAverageEvenValueTask_6_1->Name = L"btnGetAverageEvenValueTask_6_1";
+			   this->btnGetAverageEvenValueTask_6_1->Size = System::Drawing::Size(250, 50);
+			   this->btnGetAverageEvenValueTask_6_1->TabIndex = 6;
+			   this->btnGetAverageEvenValueTask_6_1->Text = L"Найти среднее арифметическое значение четных элементов строк и столбцов матрицы";
+			   this->btnGetAverageEvenValueTask_6_1->UseVisualStyleBackColor = true;
 			   // groupBoxDescriptionTask_6_1			
 			   this->groupBoxDescriptionTask_6_1->BackColor = System::Drawing::Color::Transparent;
 			   this->groupBoxDescriptionTask_6_1->Controls->Add(this->txtBxDescriptionTask_6_1);
@@ -503,7 +538,7 @@ namespace CppCLRWinFormsProject
 			   // 
 			   this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			   this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			   this->ClientSize = System::Drawing::Size(847, 469);
+			   this->ClientSize = System::Drawing::Size(1380, 669);
 			   this->Controls->Add(this->tabControl_lab_1);
 			   this->Name = L"Form1";
 			   this->Text = L"Лабораторная № 4";
@@ -520,47 +555,103 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_2->PerformLayout();
 			   this->groupBoxDescriptionTask_6_3->ResumeLayout(false);
 			   this->groupBoxDescriptionTask_6_3->PerformLayout();
-			   this->MinimumSize = System::Drawing::Size(863, 508);
-			   this->MaximumSize = System::Drawing::Size(863, 508);
+			   this->MinimumSize = System::Drawing::Size(1380, 708);
+			   this->MaximumSize = System::Drawing::Size(1380, 708);
 			   this->ResumeLayout(false);
 
 		   }
 
-#pragma region Task_6_1
+			#pragma region Task_6_1
 
-		   System::Void btnGetResultConvertStringTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
-		   {
-			   if (!IsValidateN(txtBxInputNTask_6_1->Text))
-				   return;
+		   System::Void btnFillArrValueTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
+		   {		   
+			   Random^ rand = gcnew Random();			 
 
-			   if (String::IsNullOrWhiteSpace(txtBxInputSTask_6_1->Text))
+			   for (int row = 0; row < countRowMatrix; row++)
 			   {
-				   MessageBox::Show("Необходимо заполнить строку S", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-
-			   int n = Convert::ToInt64(txtBxInputNTask_6_1->Text);
-			   String^ s = txtBxInputSTask_6_1->Text;
-			   System::Text::StringBuilder^ strBuilder = gcnew System::Text::StringBuilder();
-
-			   if (s->Length > n)
-			   {
-				   txtBxResultTask_6_1->Text = s->Substring(s->Length - n);
-			   }
-			   else if (s->Length < n)
-			   {
-				   for (int i = 0; i < n - s->Length; i++)
+				   for (int col = 0; col < countColMatrix; col++)
 				   {
-					   strBuilder->Append(".");
+					   matrixRundomValue[row, col] = rand->Next(int::MinValue, int::MaxValue);
+				   }
+			   }
+
+			   for (int row = 0; row < countRowMatrix; row++)
+			   {
+				   for (int col = 0; col < countColMatrix; col++)
+				   {					 
+					   //заполняем датагрид
+					   dtgViewMatrix[col, row]->Value = matrixRundomValue[row, col];
+					   //нумеруем строки
+					   dtgViewMatrix->Rows[row]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Rows[row]->Index + 1);
+					   //нумеруем столбцы
+					   dtgViewMatrix->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Columns[col]->Index + 1);					  
+				   }				 
+			   }
+		   }
+
+		   System::Void btnGetMinValueInMatrixTask_6_1_Click(System::Object^ sender, System::EventArgs^ e) 
+		   {
+			   //проверяем заполнена ли матрица
+			   if (!isFillMatrix(matrixRundomValue))
+				   return;
+
+			   //лист для минимальных элементов в строках матрицы
+			   System::Collections::Generic::List<int>^ minValues = gcnew System::Collections::Generic::List<int>();
+
+			   for (int row = 0; row < countRowMatrix; row++)
+			   {
+				   System::Collections::Generic::List<int>^ rowValues = gcnew System::Collections::Generic::List<int>();
+
+				   for (int col = 0; col < countColMatrix; col++)
+				   {
+					   //добавляе мвсе элементы строки в лист
+					   rowValues->Add(matrixRundomValue[row, col]);
 				   }
 
-				   txtBxResultTask_6_1->Text = strBuilder->ToString() + s;
+				   //сортируем лист с элементами строки, чтобы минимальный элемент был в самом начале
+				   rowValues->Sort();
+				   //добавляем минимальный элемент в лист
+				   minValues->Add(rowValues[0]);
 			   }
-			   else
+
+			   //сортируем, чтобы минимальный элемент из минимальных элементов строк был в самом начале
+			   minValues->Sort();
+			   int minValue = minValues[0];
+
+			   
+
+			   for (int row = 0; row < countRowMatrix; row++)
 			   {
-				   txtBxResultTask_6_1->Text = s;
+				   for (int col = 0; col < countColMatrix; col++)
+				   {
+					   //снимаем дефолтное выделение ячейки
+					   dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;
+
+					   //выделяем ячейку с минимальным значением
+					   if (matrixRundomValue[row, col] == minValue)
+						   dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
+				   }
 			   }
+
+			   txtBxResultTask_6_1->Text = "Минимальный элемент матрицы: " + minValue;
+		   }
+
+		   Boolean isFillMatrix(cli::array<int, 2>^ matrixRundomValue) 
+		   {
+			   for (int row = 0; row < countRowMatrix; row++)
+			   {
+				   for (int col = 0; col < countColMatrix; col++)
+				   {
+					   if (matrixRundomValue[row, col] != 0) 
+					   {						  
+						   return true;
+					   }
+						   
+				   }
+			   }
+
+			   MessageBox::Show("Необходимо заполнить матрицу", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			   return false;
 		   }
 
 		   System::Boolean IsValidateN(String^ n)
