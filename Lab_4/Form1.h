@@ -2,7 +2,6 @@
 
 namespace CppCLRWinFormsProject
 {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -76,7 +75,7 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::Button^ btnDeleteSpacesTask_6_3;
 		private: System::Windows::Forms::Button^ btnEncryptStrTask_6_4;
 		private: System::Windows::Forms::DataGridView^ dtgViewMatrix;
-				 //матрица
+			   //матрица
 		private: cli::array<int, 2>^ matrixRundomValue;
 		private: int countRowMatrix = 9;
 		private: int countColMatrix = 16;
@@ -87,7 +86,7 @@ namespace CppCLRWinFormsProject
 
 		private: System::ComponentModel::Container^ components;
 
-#pragma region Windows Form Designer generated code
+	#pragma region Windows Form Designer generated code
 
 		   void InitializeComponent(void)
 		   {
@@ -132,7 +131,7 @@ namespace CppCLRWinFormsProject
 			   this->labelStrTask_6_4 = (gcnew System::Windows::Forms::Label());
 			   this->labelKTask_6_4 = (gcnew System::Windows::Forms::Label());
 			   //text_boxes
-			   this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());			
+			   this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxResultTask_6_1 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxDescriptionTask_6_2 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxInputN1Task_6_2 = (gcnew System::Windows::Forms::TextBox());
@@ -180,11 +179,11 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_1->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_1			
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxResultTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnFillArrValueTask_6_1);		
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnFillArrValueTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetSumValueRowWithNegativeTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetMinValueInMatrixTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetAverageEvenValueTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->dtgViewMatrix);		
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->dtgViewMatrix);
 			   this->groupBoxSolutionTask_6_1->Location = System::Drawing::Point(8, 100);
 			   this->groupBoxSolutionTask_6_1->Name = L"groupBox2";
 			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(1340, 540);
@@ -206,11 +205,12 @@ namespace CppCLRWinFormsProject
 			   this->dtgViewMatrix->ColumnCount = countColMatrix;
 			   this->dtgViewMatrix->Location = System::Drawing::Point(8, 100);
 			   this->dtgViewMatrix->Size = System::Drawing::Size(1320, 240);
+			   //настройка колонок
 			   DataGridViewColumnCollection^ columns = dtgViewMatrix->Columns;
-
-			   for each ( DataGridViewColumn^ col in columns)
+			   for each (DataGridViewColumn ^ col in columns)
 			   {
 				   col->Width = 80;
+				   col->DefaultCellStyle->Format = "N0";
 			   }
 			   // btnFillArrValueTask_6_1			
 			   this->btnFillArrValueTask_6_1->Location = System::Drawing::Point(5, 20);
@@ -219,7 +219,7 @@ namespace CppCLRWinFormsProject
 			   this->btnFillArrValueTask_6_1->TabIndex = 6;
 			   this->btnFillArrValueTask_6_1->Text = L"Заполнить матрицу";
 			   this->btnFillArrValueTask_6_1->UseVisualStyleBackColor = true;
-			   this->btnFillArrValueTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnFillArrValueTask_6_1_Click);	
+			   this->btnFillArrValueTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnFillArrValueTask_6_1_Click);
 			   // btnGetSumValueRowWithNegativeTask_6_1			
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Location = System::Drawing::Point(5, 50);
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Name = L"btnGetSumValueRowWithNegativeTask_6_1";
@@ -227,6 +227,7 @@ namespace CppCLRWinFormsProject
 			   this->btnGetSumValueRowWithNegativeTask_6_1->TabIndex = 6;
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Text = L"Найти сумму элементов в строках, содержащих хотя бы один отрицательный элемент";
 			   this->btnGetSumValueRowWithNegativeTask_6_1->UseVisualStyleBackColor = true;
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetSumValueRowWithNegativeTask_6_1_Click);
 			   // btnGetMinValueInMatrixTask_6_1			
 			   this->btnGetMinValueInMatrixTask_6_1->Location = System::Drawing::Point(180, 20);
 			   this->btnGetMinValueInMatrixTask_6_1->Name = L"btnGetMinValueInMatrixTask_6_1";
@@ -242,6 +243,7 @@ namespace CppCLRWinFormsProject
 			   this->btnGetAverageEvenValueTask_6_1->TabIndex = 6;
 			   this->btnGetAverageEvenValueTask_6_1->Text = L"Найти среднее арифметическое значение четных элементов строк и столбцов матрицы";
 			   this->btnGetAverageEvenValueTask_6_1->UseVisualStyleBackColor = true;
+			   this->btnGetAverageEvenValueTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetAverageEvenValueTask_6_1_Click);
 			   // groupBoxDescriptionTask_6_1			
 			   this->groupBoxDescriptionTask_6_1->BackColor = System::Drawing::Color::Transparent;
 			   this->groupBoxDescriptionTask_6_1->Controls->Add(this->txtBxDescriptionTask_6_1);
@@ -260,11 +262,11 @@ namespace CppCLRWinFormsProject
 			   this->txtBxDescriptionTask_6_1->ReadOnly = true;
 			   this->txtBxDescriptionTask_6_1->Size = System::Drawing::Size(811, 70);
 			   this->txtBxDescriptionTask_6_1->TabIndex = 0;
-			   this->txtBxDescriptionTask_6_1->Text = L"Дана целочисленная прямоугольная матрица A [9*16]. Написать программу, определяющую величины : "			   
-													   +"\r\n1) суммы элементов в строках, которые содержат хотя бы один отрицательный элемент;"
-												       +"\r\n2) минимальный элемент матрицы;"
-													   +"\r\n3) среднее арифметическое значение четных элементов строк и столбцов матрицы;"
-													   +"\r\n4) средние арифметические значения четных элементов строк и столбцов матрицы упорядочить по убыванию методом вставки.";
+			   this->txtBxDescriptionTask_6_1->Text = L"Дана целочисленная прямоугольная матрица A [9*16]. Написать программу, определяющую величины : "
+				   + "\r\n1) суммы элементов в строках, которые содержат хотя бы один отрицательный элемент;"
+				   + "\r\n2) минимальный элемент матрицы;"
+				   + "\r\n3) среднее арифметическое значение четных элементов строк и столбцов матрицы;"
+				   + "\r\n4) средние арифметические значения четных элементов строк и столбцов матрицы упорядочить по убыванию методом вставки.";
 			   // 	
 			   // tabPageTask_6_2	
 			   // 		
@@ -563,9 +565,13 @@ namespace CppCLRWinFormsProject
 
 			#pragma region Task_6_1
 
+		   //заполнение матрицы
 		   System::Void btnFillArrValueTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
-		   {		   
-			   Random^ rand = gcnew Random();			 
+		   {
+			   //снимаем все выделения ячеек
+			   ClearSelectedDtgViewMatrix();
+
+			   Random^ rand = gcnew Random();
 
 			   for (int row = 0; row < countRowMatrix; row++)
 			   {
@@ -578,21 +584,22 @@ namespace CppCLRWinFormsProject
 			   for (int row = 0; row < countRowMatrix; row++)
 			   {
 				   for (int col = 0; col < countColMatrix; col++)
-				   {					 
+				   {
 					   //заполняем датагрид
 					   dtgViewMatrix[col, row]->Value = matrixRundomValue[row, col];
 					   //нумеруем строки
 					   dtgViewMatrix->Rows[row]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Rows[row]->Index + 1);
 					   //нумеруем столбцы
-					   dtgViewMatrix->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Columns[col]->Index + 1);					  
-				   }				 
+					   dtgViewMatrix->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Columns[col]->Index + 1);
+				   }
 			   }
 		   }
 
-		   System::Void btnGetMinValueInMatrixTask_6_1_Click(System::Object^ sender, System::EventArgs^ e) 
+		   //поиск минмального элемента
+		   System::Void btnGetMinValueInMatrixTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
 			   //проверяем заполнена ли матрица
-			   if (!isFillMatrix(matrixRundomValue))
+			   if (!isFillMatrix())
 				   return;
 
 			   //лист для минимальных элементов в строках матрицы
@@ -618,7 +625,7 @@ namespace CppCLRWinFormsProject
 			   minValues->Sort();
 			   int minValue = minValues[0];
 
-			   
+
 
 			   for (int row = 0; row < countRowMatrix; row++)
 			   {
@@ -636,17 +643,18 @@ namespace CppCLRWinFormsProject
 			   txtBxResultTask_6_1->Text = "Минимальный элемент матрицы: " + minValue;
 		   }
 
-		   Boolean isFillMatrix(cli::array<int, 2>^ matrixRundomValue) 
+		   //проверка, что матрица заполнена
+		   Boolean isFillMatrix()
 		   {
 			   for (int row = 0; row < countRowMatrix; row++)
 			   {
 				   for (int col = 0; col < countColMatrix; col++)
 				   {
-					   if (matrixRundomValue[row, col] != 0) 
-					   {						  
+					   if (matrixRundomValue[row, col] != 0)
+					   {
 						   return true;
 					   }
-						   
+
 				   }
 			   }
 
@@ -654,30 +662,183 @@ namespace CppCLRWinFormsProject
 			   return false;
 		   }
 
-		   System::Boolean IsValidateN(String^ n)
+		   System::Void btnGetSumValueRowWithNegativeTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
-			   int parseResult;
+			   if (!isFillMatrix())
+				   return;
 
-			   if (String::IsNullOrWhiteSpace(n))
+			   txtBxResultTask_6_1->Clear();
+
+			   System::Collections::Generic::List<int>^ rowNumbersWithNegative = GetNumRowWithNegativeValue();
+
+			   for (int i = 0; i < rowNumbersWithNegative->Count; i++)
 			   {
-				   MessageBox::Show("Необходимо заполнить число N", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
+				   dtgViewMatrix->Rows[rowNumbersWithNegative[i]]->Selected = true;
 
-			   if (!int::TryParse(n, parseResult))
-			   {
-				   MessageBox::Show("N должно быть целым числом", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
+				   int sum = GetSumValueInRow(rowNumbersWithNegative[i]);
+				   txtBxResultTask_6_1->Text += "Сумма элементов в строке " + (rowNumbersWithNegative[i] + 1) + " равна: " + sum + "\r\n";
 			   }
-
-			   if (parseResult < 0 || parseResult == 0)
-			   {
-				   MessageBox::Show("N должно быть больше 0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   return true;
 		   }
+
+		   private: int GetSumValueInRow(int numberRow)
+		   {
+			   int sum = 0;
+
+			   for (int col = 0; col < countColMatrix; col++)
+			   {				
+				   sum += matrixRundomValue[numberRow, col];
+			   }
+
+			   return sum;
+		   }
+
+		   private: System::Collections::Generic::List<int>^ GetNumRowWithNegativeValue()
+	       {
+		       System::Collections::Generic::List<int>^ rowNumbers = gcnew System::Collections::Generic::List<int>();
+
+		       for (int row = 0; row < countRowMatrix; row++)
+		       {
+			       for (int col = 0; col < countColMatrix; col++)
+			       {
+				       //снимаем дефолтное выделение ячейки
+				       dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;
+
+				      if (matrixRundomValue[row, col] < 0)
+				      {
+					      rowNumbers->Add(row);
+						  break;
+				      }
+			       }
+		       }
+
+		       return rowNumbers;
+	       }
+
+		   System::Void btnGetAverageEvenValueTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
+		   {
+			   if (!isFillMatrix())
+				   return;
+
+			   txtBxResultTask_6_1->Clear();
+			   //снимаем все выделения ячеек
+			   ClearSelectedDtgViewMatrix();			  
+			   
+			   System::Collections::Generic::List<double>^ averagesRow = GetAverageInRow();			  
+			   System::Collections::Generic::List<double>^ averagesCol = GetEvenValueInCol();
+
+			   System::Collections::Generic::List<double>^ averagesRowSorted = SortInsertion(averagesRow);
+			   System::Collections::Generic::List<double>^ averagesColSorted = SortInsertion(averagesCol);
+
+			   txtBxResultTask_6_1->Text += "Средние арифметические значения четных элементов строк, отсортированных по убыванию: \r\n";
+
+			   for (int i = 0; i < averagesRowSorted->Count; i++)
+			   {
+				   txtBxResultTask_6_1->Text += Math::Round(averagesRowSorted[i], 2) + "\r\n";
+			   }
+
+			   txtBxResultTask_6_1->Text += "\r\nСредние арифметические значения четных элементов столбцов, отсортированных по убыванию: \r\n";
+
+			   for (int i = 0; i < averagesColSorted->Count; i++)
+			   {
+				   txtBxResultTask_6_1->Text += Math::Round(averagesColSorted[i], 2) + "\r\n";
+			   }
+		   }
+
+			private: double GetAverage(System::Collections::Generic::List<int>^ values)
+			{
+				int sum = 0;
+
+				for (int i = 0; i < values->Count; i++)
+				{
+					sum += values[i];
+				}
+
+				return (double)sum / values->Count;				
+			}
+
+			private: System::Collections::Generic::List<double>^ SortInsertion(System::Collections::Generic::List<double>^ values) 
+			{
+				for (int i = 1; i < values->Count; i++)
+				{
+					double value = values[i];
+					int j = i - 1;
+					while ((j >= 0) && (values[j].CompareTo(value) < 0))
+					{
+						values[j + 1] = values[j];
+						j--;
+					}
+					values[j + 1] = value;
+				}
+
+				return values;
+			}
+
+		   //возвращаем список средних арифметических по строкам для сортировки
+		   private: System::Collections::Generic::List<double>^ GetAverageInRow()
+		   {
+			   System::Collections::Generic::List<double>^ averagesRow = gcnew System::Collections::Generic::List<double>();
+			   System::Collections::Generic::List<int>^ evenValue = gcnew System::Collections::Generic::List<int>();
+
+			   for (int row = 0; row < countRowMatrix; row++)
+			   {
+				   //на каждой итерации строки очищается список
+				   evenValue->Clear();
+
+				   for (int col = 0; col < countColMatrix; col++)
+				   {	   
+					   if (matrixRundomValue[row, col] %  2 == 0)
+					   {
+						   //подсвкечиваем четные числа 
+						   dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
+						   evenValue->Add(matrixRundomValue[row, col]);						   
+					   }
+				   }
+
+				   averagesRow->Add(GetAverage(evenValue));				  
+			   }
+
+			   return averagesRow;
+		   }
+
+			//возвращаем список средних арифметических по столбцам для сортировки
+			private: System::Collections::Generic::List<double>^ GetEvenValueInCol()
+			{
+				System::Collections::Generic::List<double>^ averagesCol = gcnew System::Collections::Generic::List<double>();
+				System::Collections::Generic::List<int>^ evenValue = gcnew System::Collections::Generic::List<int>();
+
+				for (int col = 0; col < countColMatrix; col++)
+				{
+					//на каждой итерации столбца очищается список
+					evenValue->Clear();
+
+					for (int row = 0; row < countRowMatrix; row++)
+					{			
+						if (matrixRundomValue[row, col] % 2 == 0)
+						{
+							//подсвкечиваем четные числа 
+							dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
+							evenValue->Add(matrixRundomValue[row, col]);
+						}
+					}
+
+					averagesCol->Add(GetAverage(evenValue));
+				}
+
+				return averagesCol;
+			}
+
+			private: void ClearSelectedDtgViewMatrix() 
+			{
+				for (int row = 0; row < countRowMatrix; row++)
+				{
+					for (int col = 0; col < countColMatrix; col++)
+					{
+						//снимаем дефолтное выделение ячейки
+						dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;						
+					}
+				}
+			}
+		   
 #pragma endregion
 
 #pragma region Task_6_2
