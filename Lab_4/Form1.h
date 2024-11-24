@@ -158,10 +158,15 @@ namespace CppCLRWinFormsProject
 			   this->dtgViewMatrixTask_6_1->Location = System::Drawing::Point(5, 100);
 			   this->dtgViewMatrixTask_6_1->Size = System::Drawing::Size(1320, 240);
 			   //настройка колонок
-			   DataGridViewColumnCollection^ columns = dtgViewMatrixTask_6_1->Columns;
-			   for each (DataGridViewColumn ^ col in columns)
+			   DataGridViewColumnCollection^ columnsDtgViewMatrixTask_6_1 = dtgViewMatrixTask_6_1->Columns;
+			   for each (DataGridViewColumn ^ col in columnsDtgViewMatrixTask_6_1)
 			   {
 				   col->Width = 80;
+				   col->DefaultCellStyle->Format = "N0";
+			   }
+			   DataGridViewColumnCollection^ columnsDtgViewMatrixTask_6_2 = dtgViewMatrixTask_6_2->Columns;
+			   for each (DataGridViewColumn ^ col in columnsDtgViewMatrixTask_6_2)
+			   {				  
 				   col->DefaultCellStyle->Format = "N0";
 			   }
 			   this->dtgViewMatrixTask_6_2->RowCount = countRowMatrixTask_6_2;
