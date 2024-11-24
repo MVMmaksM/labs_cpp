@@ -31,54 +31,35 @@ namespace CppCLRWinFormsProject
 			//tab_pages
 		private: System::Windows::Forms::TabPage^ tabPageTask_6_1;
 		private: System::Windows::Forms::TabPage^ tabPageTask_6_2;
-		private: System::Windows::Forms::TabPage^ tabPageTask_6_3;
-		private: System::Windows::Forms::TabPage^ tabPageTask_6_4;
 			   //group_boxes
 		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_1;
 		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_1;
 		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_2;
 		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_2;
-		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_3;
-		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_3;
-		private: System::Windows::Forms::GroupBox^ groupBoxDescriptionTask_6_4;
-		private: System::Windows::Forms::GroupBox^ groupBoxSolutionTask_6_4;
-			   //labels	
-		private: System::Windows::Forms::Label^ labelN1Task_6_2;
-		private: System::Windows::Forms::Label^ labelN2Task_6_2;
-		private: System::Windows::Forms::Label^ labelS1Task_6_2;
-		private: System::Windows::Forms::Label^ labelS2Task_6_2;
-		private: System::Windows::Forms::Label^ labelStringWithSpacesTask_6_3;
-		private: System::Windows::Forms::Label^ labelStrTask_6_4;
-		private: System::Windows::Forms::Label^ labelKTask_6_4;
 			   //text_boxes
 		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_1;
 		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_1;
 		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_2;
 		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_2;
-		private: System::Windows::Forms::TextBox^ txtBxInputN1Task_6_2;
-		private: System::Windows::Forms::TextBox^ txtBxInputN2Task_6_2;
-		private: System::Windows::Forms::TextBox^ txtBxInputS1Task_6_2;
-		private: System::Windows::Forms::TextBox^ txtBxInputS2Task_6_2;
-		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_3;
-		private: System::Windows::Forms::TextBox^ txtBxInputStringWithSpacesTask_6_3;
-		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_3;
-		private: System::Windows::Forms::TextBox^ txtBxDescriptionTask_6_4;
-		private: System::Windows::Forms::TextBox^ txtBxResultTask_6_4;
-		private: System::Windows::Forms::TextBox^ txtBxInputStrTask_6_4;
-		private: System::Windows::Forms::TextBox^ txtBxInputKTask_6_4;
 			   //buttons
 		private: System::Windows::Forms::Button^ btnFillArrValueTask_6_1;
 		private: System::Windows::Forms::Button^ btnGetSumValueRowWithNegativeTask_6_1;
 		private: System::Windows::Forms::Button^ btnGetMinValueInMatrixTask_6_1;
 		private: System::Windows::Forms::Button^ btnGetAverageEvenValueTask_6_1;
-		private: System::Windows::Forms::Button^ btnGetNewStringTask_6_2;
-		private: System::Windows::Forms::Button^ btnDeleteSpacesTask_6_3;
-		private: System::Windows::Forms::Button^ btnEncryptStrTask_6_4;
-		private: System::Windows::Forms::DataGridView^ dtgViewMatrix;
-			   //матрица
-		private: cli::array<int, 2>^ matrixRundomValue;
-		private: int countRowMatrix = 9;
-		private: int countColMatrix = 16;
+		private: System::Windows::Forms::Button^ btnFillArrValueTask_6_2;
+		private: System::Windows::Forms::Button^ btnCountPrimeValueTask_6_2;
+		private: System::Windows::Forms::Button^ btnMaxMainSideDiagonalTask_6_2;
+		private: System::Windows::Forms::Button^ btnAverageQuadraticTask_6_2;
+			   //datagridView
+		private: System::Windows::Forms::DataGridView^ dtgViewMatrixTask_6_1;
+		private: System::Windows::Forms::DataGridView^ dtgViewMatrixTask_6_2;
+			   //matrix
+		private: cli::array<int, 2>^ matrixRundomValueTask_6_1;
+		private: cli::array<int, 2>^ matrixRundomValueTask_6_2;
+		private: int countRowMatrixTask_6_1 = 9;
+		private: int countColMatrixTask_6_1 = 16;
+		private: int countRowMatrixTask_6_2 = 12;
+		private: int countColMatrixTask_6_2 = 12;
 
 		protected:
 
@@ -86,13 +67,16 @@ namespace CppCLRWinFormsProject
 
 		private: System::ComponentModel::Container^ components;
 
-	#pragma region Windows Form Designer generated code
+#pragma region Windows Form Designer generated code
 
 		   void InitializeComponent(void)
 		   {
-			   matrixRundomValue = gcnew cli::array<int, 2>(countRowMatrix, countColMatrix);
-			   this->dtgViewMatrix = (gcnew System::Windows::Forms::DataGridView());
-			   this->dtgViewMatrix->SuspendLayout();
+			   matrixRundomValueTask_6_1 = gcnew cli::array<int, 2>(countRowMatrixTask_6_1, countColMatrixTask_6_1);
+			   matrixRundomValueTask_6_2 = gcnew cli::array<int, 2>(countRowMatrixTask_6_2, countColMatrixTask_6_2);
+			   this->dtgViewMatrixTask_6_1 = (gcnew System::Windows::Forms::DataGridView());
+			   this->dtgViewMatrixTask_6_1->SuspendLayout();
+			   this->dtgViewMatrixTask_6_2 = (gcnew System::Windows::Forms::DataGridView());
+			   this->dtgViewMatrixTask_6_2->SuspendLayout();
 			   //tab_control
 			   this->tabControl_lab_1 = (gcnew System::Windows::Forms::TabControl());
 			   this->tabControl_lab_1->SuspendLayout();
@@ -101,10 +85,6 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_1->SuspendLayout();
 			   this->tabPageTask_6_2 = (gcnew System::Windows::Forms::TabPage());
 			   this->tabPageTask_6_2->SuspendLayout();
-			   this->tabPageTask_6_3 = (gcnew System::Windows::Forms::TabPage());
-			   this->tabPageTask_6_3->SuspendLayout();
-			   this->tabPageTask_6_4 = (gcnew System::Windows::Forms::TabPage());
-			   this->tabPageTask_6_4->SuspendLayout();
 			   //group_boxes
 			   this->groupBoxDescriptionTask_6_1 = (gcnew System::Windows::Forms::GroupBox());
 			   this->groupBoxDescriptionTask_6_1->SuspendLayout();
@@ -114,54 +94,26 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_2->SuspendLayout();
 			   this->groupBoxSolutionTask_6_2 = (gcnew System::Windows::Forms::GroupBox());
 			   this->groupBoxSolutionTask_6_2->SuspendLayout();
-			   this->groupBoxDescriptionTask_6_3 = (gcnew System::Windows::Forms::GroupBox());
-			   this->groupBoxDescriptionTask_6_3->SuspendLayout();
-			   this->groupBoxSolutionTask_6_3 = (gcnew System::Windows::Forms::GroupBox());
-			   this->groupBoxSolutionTask_6_3->SuspendLayout();
-			   this->groupBoxDescriptionTask_6_4 = (gcnew System::Windows::Forms::GroupBox());
-			   this->groupBoxDescriptionTask_6_4->SuspendLayout();
-			   this->groupBoxSolutionTask_6_4 = (gcnew System::Windows::Forms::GroupBox());
-			   this->groupBoxSolutionTask_6_4->SuspendLayout();
-			   //labels	
-			   this->labelN1Task_6_2 = (gcnew System::Windows::Forms::Label());
-			   this->labelN2Task_6_2 = (gcnew System::Windows::Forms::Label());
-			   this->labelS1Task_6_2 = (gcnew System::Windows::Forms::Label());
-			   this->labelS2Task_6_2 = (gcnew System::Windows::Forms::Label());
-			   this->labelStringWithSpacesTask_6_3 = (gcnew System::Windows::Forms::Label());
-			   this->labelStrTask_6_4 = (gcnew System::Windows::Forms::Label());
-			   this->labelKTask_6_4 = (gcnew System::Windows::Forms::Label());
 			   //text_boxes
 			   this->txtBxDescriptionTask_6_1 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxResultTask_6_1 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxDescriptionTask_6_2 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputN1Task_6_2 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputN2Task_6_2 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputS1Task_6_2 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputS2Task_6_2 = (gcnew System::Windows::Forms::TextBox());
 			   this->txtBxResultTask_6_2 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxDescriptionTask_6_3 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxDescriptionTask_6_4 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputStringWithSpacesTask_6_3 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxResultTask_6_3 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxResultTask_6_4 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputStrTask_6_4 = (gcnew System::Windows::Forms::TextBox());
-			   this->txtBxInputKTask_6_4 = (gcnew System::Windows::Forms::TextBox());
 			   //buttons
 			   this->btnFillArrValueTask_6_1 = (gcnew System::Windows::Forms::Button());
 			   this->btnGetSumValueRowWithNegativeTask_6_1 = (gcnew System::Windows::Forms::Button());
 			   this->btnGetMinValueInMatrixTask_6_1 = (gcnew System::Windows::Forms::Button());
 			   this->btnGetAverageEvenValueTask_6_1 = (gcnew System::Windows::Forms::Button());
-			   this->btnGetNewStringTask_6_2 = (gcnew System::Windows::Forms::Button());
-			   this->btnDeleteSpacesTask_6_3 = (gcnew System::Windows::Forms::Button());
-			   this->btnEncryptStrTask_6_4 = (gcnew System::Windows::Forms::Button());
+			   this->btnFillArrValueTask_6_2 = (gcnew System::Windows::Forms::Button());
+			   this->btnCountPrimeValueTask_6_2 = (gcnew System::Windows::Forms::Button());
+			   this->btnMaxMainSideDiagonalTask_6_2 = (gcnew System::Windows::Forms::Button());
+			   this->btnAverageQuadraticTask_6_2 = (gcnew System::Windows::Forms::Button());
 
 			   this->SuspendLayout();
 
 			   //tabControls			
 			   this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_1);
 			   this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_2);
-			   this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_3);
-			   this->tabControl_lab_1->Controls->Add(this->tabPageTask_6_4);
 			   this->tabControl_lab_1->Location = System::Drawing::Point(0, 1);
 			   this->tabControl_lab_1->Name = L"tabControl";
 			   this->tabControl_lab_1->SelectedIndex = 0;
@@ -183,10 +135,10 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetSumValueRowWithNegativeTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetMinValueInMatrixTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetAverageEvenValueTask_6_1);
-			   this->groupBoxSolutionTask_6_1->Controls->Add(this->dtgViewMatrix);
+			   this->groupBoxSolutionTask_6_1->Controls->Add(this->dtgViewMatrixTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Location = System::Drawing::Point(8, 100);
 			   this->groupBoxSolutionTask_6_1->Name = L"groupBox2";
-			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(1340, 540);
+			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(1330, 540);
 			   this->groupBoxSolutionTask_6_1->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_1->TabStop = false;
 			   this->groupBoxSolutionTask_6_1->Text = L"Решение";
@@ -195,23 +147,27 @@ namespace CppCLRWinFormsProject
 			   this->txtBxResultTask_6_1->BackColor = System::Drawing::SystemColors::ControlLightLight;
 			   this->txtBxResultTask_6_1->Location = System::Drawing::Point(5, 350);
 			   this->txtBxResultTask_6_1->Multiline = true;
-			   this->txtBxResultTask_6_1->Name = L"textBoxOutputResult";
+			   this->txtBxResultTask_6_1->Name = L"txtBxResultTask_6_1";
 			   this->txtBxResultTask_6_1->ReadOnly = true;
 			   this->txtBxResultTask_6_1->Size = System::Drawing::Size(1320, 180);
 			   this->txtBxResultTask_6_1->TabIndex = 7;
 			   this->txtBxResultTask_6_1->ScrollBars = ScrollBars::Vertical;
-			   //dtgViewMatrix
-			   this->dtgViewMatrix->RowCount = countRowMatrix;
-			   this->dtgViewMatrix->ColumnCount = countColMatrix;
-			   this->dtgViewMatrix->Location = System::Drawing::Point(8, 100);
-			   this->dtgViewMatrix->Size = System::Drawing::Size(1320, 240);
+			   //dtgViewMatrixTask_6_1
+			   this->dtgViewMatrixTask_6_1->RowCount = countRowMatrixTask_6_1;
+			   this->dtgViewMatrixTask_6_1->ColumnCount = countColMatrixTask_6_1;
+			   this->dtgViewMatrixTask_6_1->Location = System::Drawing::Point(5, 100);
+			   this->dtgViewMatrixTask_6_1->Size = System::Drawing::Size(1320, 240);
 			   //настройка колонок
-			   DataGridViewColumnCollection^ columns = dtgViewMatrix->Columns;
+			   DataGridViewColumnCollection^ columns = dtgViewMatrixTask_6_1->Columns;
 			   for each (DataGridViewColumn ^ col in columns)
 			   {
 				   col->Width = 80;
 				   col->DefaultCellStyle->Format = "N0";
 			   }
+			   this->dtgViewMatrixTask_6_2->RowCount = countRowMatrixTask_6_2;
+			   this->dtgViewMatrixTask_6_2->ColumnCount = countColMatrixTask_6_2;
+			   this->dtgViewMatrixTask_6_2->Location = System::Drawing::Point(5, 100);
+			   this->dtgViewMatrixTask_6_2->Size = System::Drawing::Size(1320, 240);
 			   // btnFillArrValueTask_6_1			
 			   this->btnFillArrValueTask_6_1->Location = System::Drawing::Point(5, 20);
 			   this->btnFillArrValueTask_6_1->Name = L"btnFillArrValueTask_6_1";
@@ -221,25 +177,25 @@ namespace CppCLRWinFormsProject
 			   this->btnFillArrValueTask_6_1->UseVisualStyleBackColor = true;
 			   this->btnFillArrValueTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnFillArrValueTask_6_1_Click);
 			   // btnGetSumValueRowWithNegativeTask_6_1			
-			   this->btnGetSumValueRowWithNegativeTask_6_1->Location = System::Drawing::Point(5, 50);
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Location = System::Drawing::Point(170, 20);
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Name = L"btnGetSumValueRowWithNegativeTask_6_1";
-			   this->btnGetSumValueRowWithNegativeTask_6_1->Size = System::Drawing::Size(180, 50);
+			   this->btnGetSumValueRowWithNegativeTask_6_1->Size = System::Drawing::Size(148, 70);
 			   this->btnGetSumValueRowWithNegativeTask_6_1->TabIndex = 6;
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Text = L"Найти сумму элементов в строках, содержащих хотя бы один отрицательный элемент";
 			   this->btnGetSumValueRowWithNegativeTask_6_1->UseVisualStyleBackColor = true;
 			   this->btnGetSumValueRowWithNegativeTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetSumValueRowWithNegativeTask_6_1_Click);
 			   // btnGetMinValueInMatrixTask_6_1			
-			   this->btnGetMinValueInMatrixTask_6_1->Location = System::Drawing::Point(180, 20);
+			   this->btnGetMinValueInMatrixTask_6_1->Location = System::Drawing::Point(5, 45);
 			   this->btnGetMinValueInMatrixTask_6_1->Name = L"btnGetMinValueInMatrixTask_6_1";
-			   this->btnGetMinValueInMatrixTask_6_1->Size = System::Drawing::Size(250, 22);
+			   this->btnGetMinValueInMatrixTask_6_1->Size = System::Drawing::Size(148, 45);
 			   this->btnGetMinValueInMatrixTask_6_1->TabIndex = 6;
 			   this->btnGetMinValueInMatrixTask_6_1->Text = L"Найти минимальный элемент матрицы";
 			   this->btnGetMinValueInMatrixTask_6_1->UseVisualStyleBackColor = true;
 			   this->btnGetMinValueInMatrixTask_6_1->Click += gcnew System::EventHandler(this, &Form1::btnGetMinValueInMatrixTask_6_1_Click);
 			   // btnGetAverageEvenValueTask_6_1			
-			   this->btnGetAverageEvenValueTask_6_1->Location = System::Drawing::Point(180, 50);
+			   this->btnGetAverageEvenValueTask_6_1->Location = System::Drawing::Point(320, 20);
 			   this->btnGetAverageEvenValueTask_6_1->Name = L"btnGetAverageEvenValueTask_6_1";
-			   this->btnGetAverageEvenValueTask_6_1->Size = System::Drawing::Size(250, 50);
+			   this->btnGetAverageEvenValueTask_6_1->Size = System::Drawing::Size(160, 70);
 			   this->btnGetAverageEvenValueTask_6_1->TabIndex = 6;
 			   this->btnGetAverageEvenValueTask_6_1->Text = L"Найти среднее арифметическое значение четных элементов строк и столбцов матрицы";
 			   this->btnGetAverageEvenValueTask_6_1->UseVisualStyleBackColor = true;
@@ -249,7 +205,7 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_1->Controls->Add(this->txtBxDescriptionTask_6_1);
 			   this->groupBoxDescriptionTask_6_1->Location = System::Drawing::Point(8, 6);
 			   this->groupBoxDescriptionTask_6_1->Name = L"groupBox1";
-			   this->groupBoxDescriptionTask_6_1->Size = System::Drawing::Size(823, 95);
+			   this->groupBoxDescriptionTask_6_1->Size = System::Drawing::Size(1330, 95);
 			   this->groupBoxDescriptionTask_6_1->TabIndex = 0;
 			   this->groupBoxDescriptionTask_6_1->TabStop = false;
 			   this->groupBoxDescriptionTask_6_1->Text = L"Описание задачи";
@@ -281,102 +237,61 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_2->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_2				 
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxResultTask_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnGetNewStringTask_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputN1Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputN2Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputS1Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputS2Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelN1Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelN2Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelS1Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelS2Task_6_2);
-			   this->groupBoxSolutionTask_6_2->Location = System::Drawing::Point(3, 54);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnFillArrValueTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnCountPrimeValueTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnMaxMainSideDiagonalTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnAverageQuadraticTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->dtgViewMatrixTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Location = System::Drawing::Point(8, 100);
 			   this->groupBoxSolutionTask_6_2->Name = L"groupBox4";
-			   this->groupBoxSolutionTask_6_2->Size = System::Drawing::Size(834, 385);
+			   this->groupBoxSolutionTask_6_2->Size = System::Drawing::Size(1330, 540);
 			   this->groupBoxSolutionTask_6_2->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_2->TabStop = false;
 			   this->groupBoxSolutionTask_6_2->Text = L"Решение";
 			   // txtBxResultTask_6_2				
-			   this->txtBxResultTask_6_2->Location = System::Drawing::Point(6, 142);
+			   this->txtBxResultTask_6_2->Location = System::Drawing::Point(5, 350);
 			   this->txtBxResultTask_6_2->Multiline = true;
 			   this->txtBxResultTask_6_2->Name = L"txtBxResultTask_6_2";
-			   this->txtBxResultTask_6_2->Size = System::Drawing::Size(822, 237);
+			   this->txtBxResultTask_6_2->Size = System::Drawing::Size(1320, 180);
 			   this->txtBxResultTask_6_2->TabIndex = 4;
+			   this->txtBxResultTask_6_2->ScrollBars = ScrollBars::Vertical;
 			   // btnGetPerimeterTask_6_2				
-			   this->btnGetNewStringTask_6_2->Location = System::Drawing::Point(543, 45);
-			   this->btnGetNewStringTask_6_2->Name = L"buttonGetPerimeter";
-			   this->btnGetNewStringTask_6_2->Size = System::Drawing::Size(229, 23);
-			   this->btnGetNewStringTask_6_2->TabIndex = 3;
-			   this->btnGetNewStringTask_6_2->Text = L"Получить новую строку";
-			   this->btnGetNewStringTask_6_2->UseVisualStyleBackColor = true;
-			   this->btnGetNewStringTask_6_2->Click += gcnew System::EventHandler(this, &Form1::btnGetNewStringTask_6_2_Click);
-			   // txtBxInputN1Task_6_2				
-			   this->txtBxInputN1Task_6_2->Location = System::Drawing::Point(5, 48);
-			   this->txtBxInputN1Task_6_2->Name = L"txtBxInputN1Task_6_2";
-			   this->txtBxInputN1Task_6_2->Size = System::Drawing::Size(95, 20);
-			   this->txtBxInputN1Task_6_2->TabIndex = 1;
-			   // txtBxInputS1Task_6_2				
-			   this->txtBxInputS1Task_6_2->Location = System::Drawing::Point(250, 48);
-			   this->txtBxInputS1Task_6_2->Name = L"txtBxInputS1Task_6_2";
-			   this->txtBxInputS1Task_6_2->Size = System::Drawing::Size(98, 20);
-			   this->txtBxInputS1Task_6_2->TabIndex = 1;
-			   // txtBxInputS2Task_6_2				
-			   this->txtBxInputS2Task_6_2->Location = System::Drawing::Point(380, 48);
-			   this->txtBxInputS2Task_6_2->Name = L"txtBxInputS2Task_6_2";
-			   this->txtBxInputS2Task_6_2->Size = System::Drawing::Size(98, 20);
-			   this->txtBxInputS2Task_6_2->TabIndex = 1;
-			   // txtBxInputN2Task_6_2				
-			   this->txtBxInputN2Task_6_2->Location = System::Drawing::Point(120, 48);
-			   this->txtBxInputN2Task_6_2->Name = L"txtBxInputN2Task_6_2";
-			   this->txtBxInputN2Task_6_2->Size = System::Drawing::Size(98, 20);
-			   this->txtBxInputN2Task_6_2->TabIndex = 1;
-			   // labelN1Task_6_2				 
-			   this->labelN1Task_6_2->AutoSize = true;
-			   this->labelN1Task_6_2->Location = System::Drawing::Point(5, 32);
-			   this->labelN1Task_6_2->Name = L"label4";
-			   this->labelN1Task_6_2->Size = System::Drawing::Size(207, 13);
-			   this->labelN1Task_6_2->TabIndex = 0;
-			   this->labelN1Task_6_2->Text = L"Введите число N1";
-			   // labelN2Task_6_2				 
-			   this->labelN2Task_6_2->AutoSize = true;
-			   this->labelN2Task_6_2->Location = System::Drawing::Point(120, 32);
-			   this->labelN2Task_6_2->Name = L"label4";
-			   this->labelN2Task_6_2->Size = System::Drawing::Size(207, 13);
-			   this->labelN2Task_6_2->TabIndex = 0;
-			   this->labelN2Task_6_2->Text = L"Введите число N2";
-			   // labelS1Task_6_2				 
-			   this->labelS1Task_6_2->AutoSize = true;
-			   this->labelS1Task_6_2->Location = System::Drawing::Point(250, 32);
-			   this->labelS1Task_6_2->Name = L"label4";
-			   this->labelS1Task_6_2->Size = System::Drawing::Size(207, 13);
-			   this->labelS1Task_6_2->TabIndex = 0;
-			   this->labelS1Task_6_2->Text = L"Введите строку S1";
-			   // labelS2Task_6_2				 
-			   this->labelS2Task_6_2->AutoSize = true;
-			   this->labelS2Task_6_2->Location = System::Drawing::Point(380, 32);
-			   this->labelS2Task_6_2->Name = L"label4";
-			   this->labelS2Task_6_2->Size = System::Drawing::Size(207, 13);
-			   this->labelS2Task_6_2->TabIndex = 0;
-			   this->labelS2Task_6_2->Text = L"Введите строку S2";
-			   // labelStrTask_6_4			 
-			   this->labelStrTask_6_4->AutoSize = true;
-			   this->labelStrTask_6_4->Location = System::Drawing::Point(280, 15);
-			   this->labelStrTask_6_4->Name = L"label4";
-			   this->labelStrTask_6_4->Size = System::Drawing::Size(207, 13);
-			   this->labelStrTask_6_4->TabIndex = 0;
-			   this->labelStrTask_6_4->Text = L"Введите строку-предложение на русском языке";
-			   // labelKTask_6_4			 
-			   this->labelKTask_6_4->AutoSize = true;
-			   this->labelKTask_6_4->Location = System::Drawing::Point(5, 90);
-			   this->labelKTask_6_4->Name = L"labelKTask_6_4";
-			   this->labelKTask_6_4->Size = System::Drawing::Size(207, 13);
-			   this->labelKTask_6_4->TabIndex = 0;
-			   this->labelKTask_6_4->Text = L"Введите число k (0 < k < 10)";
+			   this->btnFillArrValueTask_6_2->Location = System::Drawing::Point(5, 15);
+			   this->btnFillArrValueTask_6_2->Name = L"btnFillArrValueTask_6_2";
+			   this->btnFillArrValueTask_6_2->Size = System::Drawing::Size(229, 23);
+			   this->btnFillArrValueTask_6_2->TabIndex = 3;
+			   this->btnFillArrValueTask_6_2->Text = L"Заполнить матрицу";
+			   this->btnFillArrValueTask_6_2->UseVisualStyleBackColor = true;
+			   this->btnFillArrValueTask_6_2->Click += gcnew System::EventHandler(this, &Form1::btnFillArrValueTask_6_2_Click);
+			   // btnCountPrimeValueTask_6_2				
+			   this->btnCountPrimeValueTask_6_2->Location = System::Drawing::Point(5, 45);
+			   this->btnCountPrimeValueTask_6_2->Name = L"btnCountPrimeValueTask_6_2";
+			   this->btnCountPrimeValueTask_6_2->Size = System::Drawing::Size(229, 50);
+			   this->btnCountPrimeValueTask_6_2->TabIndex = 3;
+			   this->btnCountPrimeValueTask_6_2->Text = L"Найти количество элементов матрицы содержащих простые числа";
+			   this->btnCountPrimeValueTask_6_2->UseVisualStyleBackColor = true;
+			   this->btnCountPrimeValueTask_6_2->Click += gcnew System::EventHandler(this, &Form1::btnCountPrimeValueTask_6_2_Click);
+			   // btnMaxMainSideDiagonalTask_6_2				
+			   this->btnMaxMainSideDiagonalTask_6_2->Location = System::Drawing::Point(240, 15);
+			   this->btnMaxMainSideDiagonalTask_6_2->Name = L"btnMaxMainSideDiagonalTask_6_2";
+			   this->btnMaxMainSideDiagonalTask_6_2->Size = System::Drawing::Size(229, 50);
+			   this->btnMaxMainSideDiagonalTask_6_2->TabIndex = 3;
+			   this->btnMaxMainSideDiagonalTask_6_2->Text = L"Найти максимум среди элементов главной и побочной диагоналей матрицы";
+			   this->btnMaxMainSideDiagonalTask_6_2->UseVisualStyleBackColor = true;
+			   this->btnMaxMainSideDiagonalTask_6_2->Click += gcnew System::EventHandler(this, &Form1::btnMaxMainSideDiagonalTask_6_2_Click);
+			   // btnAverageQuadraticTask_6_2				
+			   this->btnAverageQuadraticTask_6_2->Location = System::Drawing::Point(475, 15);
+			   this->btnAverageQuadraticTask_6_2->Name = L"btnAverageQuadraticTask_6_2";
+			   this->btnAverageQuadraticTask_6_2->Size = System::Drawing::Size(229, 50);
+			   this->btnAverageQuadraticTask_6_2->TabIndex = 3;
+			   this->btnAverageQuadraticTask_6_2->Text = L"Найти средние квадратичные значения четных столбцов нечентных строек матрицы";
+			   this->btnAverageQuadraticTask_6_2->UseVisualStyleBackColor = true;
+			   this->btnAverageQuadraticTask_6_2->Click += gcnew System::EventHandler(this, &Form1::btnAverageQuadraticTask_6_2_Click);
 			   // groupBoxDescriptionTask_6_2				
 			   this->groupBoxDescriptionTask_6_2->Controls->Add(this->txtBxDescriptionTask_6_2);
-			   this->groupBoxDescriptionTask_6_2->Location = System::Drawing::Point(3, 0);
+			   this->groupBoxDescriptionTask_6_2->Location = System::Drawing::Point(8, 6);
 			   this->groupBoxDescriptionTask_6_2->Name = L"groupBox3";
-			   this->groupBoxDescriptionTask_6_2->Size = System::Drawing::Size(834, 48);
+			   this->groupBoxDescriptionTask_6_2->Size = System::Drawing::Size(1330, 95);
 			   this->groupBoxDescriptionTask_6_2->TabIndex = 0;
 			   this->groupBoxDescriptionTask_6_2->TabStop = false;
 			   this->groupBoxDescriptionTask_6_2->Text = L"Описание задачи";
@@ -387,154 +302,16 @@ namespace CppCLRWinFormsProject
 			   this->txtBxDescriptionTask_6_2->Multiline = true;
 			   this->txtBxDescriptionTask_6_2->Name = L"textBox1";
 			   this->txtBxDescriptionTask_6_2->ReadOnly = true;
-			   this->txtBxDescriptionTask_6_2->Size = System::Drawing::Size(822, 25);
+			   this->txtBxDescriptionTask_6_2->Size = System::Drawing::Size(811, 70);
 			   this->txtBxDescriptionTask_6_2->TabIndex = 0;
-			   this->txtBxDescriptionTask_6_2->Text = L"Даны два числа: N1 и N2, и две строки: S1 и S2. Получить из этих строк новую "
-				   + "строку, объединив N1 первых символов строки S1 и N2 последних символов строки S2";
-			   // 
-			   // tabPageTask_6_3
-			   // 		
-			   this->tabPageTask_6_3->Controls->Add(this->groupBoxDescriptionTask_6_3);
-			   this->tabPageTask_6_3->Controls->Add(this->groupBoxSolutionTask_6_3);
-			   this->tabPageTask_6_3->Location = System::Drawing::Point(4, 22);
-			   this->tabPageTask_6_3->Name = L"tabPage3";
-			   this->tabPageTask_6_3->Padding = System::Windows::Forms::Padding(3);
-			   this->tabPageTask_6_3->Size = System::Drawing::Size(840, 442);
-			   this->tabPageTask_6_3->TabIndex = 1;
-			   this->tabPageTask_6_3->Text = L"Task_6.3";
-			   this->tabPageTask_6_3->UseVisualStyleBackColor = true;
-			   // tabPageTask_6_4	
-			   this->tabPageTask_6_4->Controls->Add(this->groupBoxDescriptionTask_6_4);
-			   this->tabPageTask_6_4->Controls->Add(this->groupBoxSolutionTask_6_4);
-			   this->tabPageTask_6_4->Location = System::Drawing::Point(4, 22);
-			   this->tabPageTask_6_4->Name = L"tabPageTask_6_4";
-			   this->tabPageTask_6_4->Padding = System::Windows::Forms::Padding(3);
-			   this->tabPageTask_6_4->Size = System::Drawing::Size(840, 442);
-			   this->tabPageTask_6_4->TabIndex = 1;
-			   this->tabPageTask_6_4->Text = L"Task_6.4";
-			   this->tabPageTask_6_4->UseVisualStyleBackColor = true;
-			   //groupBoxDescriptionTask_6_3
-			   this->groupBoxDescriptionTask_6_3->BackColor = System::Drawing::Color::Transparent;
-			   this->groupBoxDescriptionTask_6_3->Controls->Add(this->txtBxDescriptionTask_6_3);
-			   this->groupBoxDescriptionTask_6_3->Location = System::Drawing::Point(3, 0);
-			   this->groupBoxDescriptionTask_6_3->Name = L"groupBox";
-			   this->groupBoxDescriptionTask_6_3->Size = System::Drawing::Size(834, 60);
-			   this->groupBoxDescriptionTask_6_3->TabIndex = 0;
-			   this->groupBoxDescriptionTask_6_3->TabStop = false;
-			   this->groupBoxDescriptionTask_6_3->Text = L"Описание задачи";
-			   //groupBoxDescriptionTask_6_4
-			   this->groupBoxDescriptionTask_6_4->BackColor = System::Drawing::Color::Transparent;
-			   this->groupBoxDescriptionTask_6_4->Controls->Add(this->txtBxDescriptionTask_6_4);
-			   this->groupBoxDescriptionTask_6_4->Location = System::Drawing::Point(3, 0);
-			   this->groupBoxDescriptionTask_6_4->Name = L"groupBox";
-			   this->groupBoxDescriptionTask_6_4->Size = System::Drawing::Size(834, 70);
-			   this->groupBoxDescriptionTask_6_4->TabIndex = 0;
-			   this->groupBoxDescriptionTask_6_4->TabStop = false;
-			   this->groupBoxDescriptionTask_6_4->Text = L"Описание задачи";
-			   //textBoxDescriptionTask6_3				 
-			   this->txtBxDescriptionTask_6_3->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			   this->txtBxDescriptionTask_6_3->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			   this->txtBxDescriptionTask_6_3->Location = System::Drawing::Point(6, 19);
-			   this->txtBxDescriptionTask_6_3->Multiline = true;
-			   this->txtBxDescriptionTask_6_3->Name = L"textBoxDescriptionTask6_3";
-			   this->txtBxDescriptionTask_6_3->ReadOnly = true;
-			   this->txtBxDescriptionTask_6_3->Size = System::Drawing::Size(811, 30);
-			   this->txtBxDescriptionTask_6_3->TabIndex = 0;
-			   this->txtBxDescriptionTask_6_3->Text = L" Дана строка-предложение, содержащая избыточные пробелы. Преобразовать"
-				   + " ее так, чтобы между словами был ровно один пробел.";
-			   //txtBxDescriptionTask_6_4				 
-			   this->txtBxDescriptionTask_6_4->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			   this->txtBxDescriptionTask_6_4->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			   this->txtBxDescriptionTask_6_4->Location = System::Drawing::Point(6, 19);
-			   this->txtBxDescriptionTask_6_4->Multiline = true;
-			   this->txtBxDescriptionTask_6_4->Name = L"textBoxDescriptionTask6_3";
-			   this->txtBxDescriptionTask_6_4->ReadOnly = true;
-			   this->txtBxDescriptionTask_6_4->Size = System::Drawing::Size(811, 40);
-			   this->txtBxDescriptionTask_6_4->TabIndex = 0;
-			   this->txtBxDescriptionTask_6_4->Text = L"Дана строка-предложение на русском языке и число k (0 < k < 10)."
-				   + " Зашифровать строку, выполнив циклическую замену каждой буквы на букву"
-				   + " того же регистра, расположенную в алфавите на k - й позиции после шифруемой"
-				   + " буквы(например, для k = 2 «А» перейдет в «В», «а» — в «в», «Б» — в «Г», «я»"
-				   + " — в «б» и т.д.).Букву «ё» в алфавите не учитывать, знаки препинания и"
-				   + " пробелы не изменять.";
-			   //groupBoxSolutionTask_6_3
-			   this->groupBoxSolutionTask_6_3->Controls->Add(this->labelStringWithSpacesTask_6_3);
-			   this->groupBoxSolutionTask_6_3->Controls->Add(this->txtBxInputStringWithSpacesTask_6_3);
-			   this->groupBoxSolutionTask_6_3->Controls->Add(this->btnDeleteSpacesTask_6_3);
-			   this->groupBoxSolutionTask_6_3->Controls->Add(this->txtBxResultTask_6_3);
-			   this->groupBoxSolutionTask_6_3->Location = System::Drawing::Point(3, 58);
-			   this->groupBoxSolutionTask_6_3->Name = L"groupBox4";
-			   this->groupBoxSolutionTask_6_3->Size = System::Drawing::Size(834, 380);
-			   this->groupBoxSolutionTask_6_3->TabIndex = 1;
-			   this->groupBoxSolutionTask_6_3->TabStop = false;
-			   this->groupBoxSolutionTask_6_3->Text = L"Решение";
-			   //groupBoxSolutionTask_6_4
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->labelStrTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxInputStrTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxInputKTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->labelKTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->txtBxResultTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Controls->Add(this->btnEncryptStrTask_6_4);
-			   this->groupBoxSolutionTask_6_4->Location = System::Drawing::Point(3, 70);
-			   this->groupBoxSolutionTask_6_4->Name = L"groupBox4";
-			   this->groupBoxSolutionTask_6_4->Size = System::Drawing::Size(834, 380);
-			   this->groupBoxSolutionTask_6_4->TabIndex = 1;
-			   this->groupBoxSolutionTask_6_4->TabStop = false;
-			   this->groupBoxSolutionTask_6_4->Text = L"Решение";
-			   //labelMTask_6_3
-			   this->labelStringWithSpacesTask_6_3->AutoSize = true;
-			   this->labelStringWithSpacesTask_6_3->Location = System::Drawing::Point(260, 20);
-			   this->labelStringWithSpacesTask_6_3->Name = L"label4";
-			   this->labelStringWithSpacesTask_6_3->Size = System::Drawing::Size(207, 13);
-			   this->labelStringWithSpacesTask_6_3->TabIndex = 0;
-			   this->labelStringWithSpacesTask_6_3->Text = L"Введите строку, содержащую избыточные пробелы";
-			   //txtBxInputStringWithSpacesTask_6_3				
-			   this->txtBxInputStringWithSpacesTask_6_3->Location = System::Drawing::Point(7, 35);
-			   this->txtBxInputStringWithSpacesTask_6_3->Name = L"txtBxInputStringWithSpacesTask_6_3";
-			   this->txtBxInputStringWithSpacesTask_6_3->Size = System::Drawing::Size(820, 50);
-			   this->txtBxInputStringWithSpacesTask_6_3->TabIndex = 3;
-			   this->txtBxInputStringWithSpacesTask_6_3->AcceptsReturn = true;
-			   this->txtBxInputStringWithSpacesTask_6_3->Multiline = true;
-			   //txtBxInputStrTask_6_4				
-			   this->txtBxInputStrTask_6_4->Location = System::Drawing::Point(7, 35);
-			   this->txtBxInputStrTask_6_4->Name = L"txtBxInputStrTask_6_4";
-			   this->txtBxInputStrTask_6_4->Size = System::Drawing::Size(820, 50);
-			   this->txtBxInputStrTask_6_4->TabIndex = 3;
-			   this->txtBxInputStrTask_6_4->AcceptsReturn = true;
-			   this->txtBxInputStrTask_6_4->Multiline = true;
-			   //txtBxInputKTask_6_4				
-			   this->txtBxInputKTask_6_4->Location = System::Drawing::Point(7, 110);
-			   this->txtBxInputKTask_6_4->Name = L"txtBxInputKTask_6_4";
-			   this->txtBxInputKTask_6_4->Size = System::Drawing::Size(140, 50);
-			   this->txtBxInputKTask_6_4->TabIndex = 3;
-			   //txtBxResultTask_6_3				
-			   this->txtBxResultTask_6_3->Location = System::Drawing::Point(6, 138);
-			   this->txtBxResultTask_6_3->Multiline = true;
-			   this->txtBxResultTask_6_3->Name = L"txtBxResultTask_6_3";
-			   this->txtBxResultTask_6_3->Size = System::Drawing::Size(822, 237);
-			   this->txtBxResultTask_6_3->TabIndex = 4;
-			   //txtBxResultTask_6_4				
-			   this->txtBxResultTask_6_4->Location = System::Drawing::Point(6, 140);
-			   this->txtBxResultTask_6_4->Multiline = true;
-			   this->txtBxResultTask_6_4->Name = L"txtBxResultTask_6_4";
-			   this->txtBxResultTask_6_4->Size = System::Drawing::Size(822, 230);
-			   this->txtBxResultTask_6_4->TabIndex = 4;
-			   //btnDeleteSpacesTask_6_3
-			   this->btnDeleteSpacesTask_6_3->Location = System::Drawing::Point(5, 100);
-			   this->btnDeleteSpacesTask_6_3->Name = L"btnDeleteSpacesTask_6_3";
-			   this->btnDeleteSpacesTask_6_3->Size = System::Drawing::Size(229, 23);
-			   this->btnDeleteSpacesTask_6_3->TabIndex = 3;
-			   this->btnDeleteSpacesTask_6_3->Text = L"Удалить лишние пробелы";
-			   this->btnDeleteSpacesTask_6_3->UseVisualStyleBackColor = true;
-			   this->btnDeleteSpacesTask_6_3->Click += gcnew System::EventHandler(this, &Form1::btnDeleteSpacesTask_6_3_Click);
-			   //btnEncryptStrTask_6_4
-			   this->btnEncryptStrTask_6_4->Location = System::Drawing::Point(180, 108);
-			   this->btnEncryptStrTask_6_4->Name = L"btnEncryptStrTask_6_4";
-			   this->btnEncryptStrTask_6_4->Size = System::Drawing::Size(200, 23);
-			   this->btnEncryptStrTask_6_4->TabIndex = 3;
-			   this->btnEncryptStrTask_6_4->Text = L"Зашифровать строку";
-			   this->btnEncryptStrTask_6_4->UseVisualStyleBackColor = true;
-			   this->btnEncryptStrTask_6_4->Click += gcnew System::EventHandler(this, &Form1::btnEncryptStrTask_6_4_Click);
+			   this->txtBxDescriptionTask_6_2->Text = L"Дана целочисленная квадратная матрица A[12*12]. Написать программу,  определяющую величины: "
+				   + "\r\n1) количество элементов матрицы, содержащих простые числа; "
+				   + "\r\n2) максимум среди элементов главной и побочной диагоналей матрицы; "
+				   + "\r\n3) средние квадратичные значения четных столбцов и нечетных строк матрицы; "
+				   + "\r\n4) средние квадратичные значения четных столбцов и нечетных строк "
+				   + "матрицы, упорядочить по возрастанию простым методом обмена.";
+
+
 			   // 
 			   // Form1
 			   // 
@@ -555,42 +332,38 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxSolutionTask_6_2->PerformLayout();
 			   this->groupBoxDescriptionTask_6_2->ResumeLayout(false);
 			   this->groupBoxDescriptionTask_6_2->PerformLayout();
-			   this->groupBoxDescriptionTask_6_3->ResumeLayout(false);
-			   this->groupBoxDescriptionTask_6_3->PerformLayout();
 			   this->MinimumSize = System::Drawing::Size(1380, 708);
 			   this->MaximumSize = System::Drawing::Size(1380, 708);
 			   this->ResumeLayout(false);
-
 		   }
 
 			#pragma region Task_6_1
-
 		   //заполнение матрицы
 		   System::Void btnFillArrValueTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
 			   //снимаем все выделения ячеек
-			   ClearSelectedDtgViewMatrix();
+			   ClearSelectedDtgViewMatrixTask_6_1();
 
 			   Random^ rand = gcnew Random();
 
-			   for (int row = 0; row < countRowMatrix; row++)
+			   for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			   {
-				   for (int col = 0; col < countColMatrix; col++)
+				   for (int col = 0; col < countColMatrixTask_6_1; col++)
 				   {
-					   matrixRundomValue[row, col] = rand->Next(int::MinValue, int::MaxValue);
+					   matrixRundomValueTask_6_1[row, col] = rand->Next(int::MinValue, int::MaxValue);
 				   }
 			   }
 
-			   for (int row = 0; row < countRowMatrix; row++)
+			   for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			   {
-				   for (int col = 0; col < countColMatrix; col++)
+				   for (int col = 0; col < countColMatrixTask_6_1; col++)
 				   {
 					   //заполняем датагрид
-					   dtgViewMatrix[col, row]->Value = matrixRundomValue[row, col];
+					   dtgViewMatrixTask_6_1[col, row]->Value = matrixRundomValueTask_6_1[row, col];
 					   //нумеруем строки
-					   dtgViewMatrix->Rows[row]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Rows[row]->Index + 1);
+					   dtgViewMatrixTask_6_1->Rows[row]->HeaderCell->Value = String::Format("{0}", dtgViewMatrixTask_6_1->Rows[row]->Index + 1);
 					   //нумеруем столбцы
-					   dtgViewMatrix->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrix->Columns[col]->Index + 1);
+					   dtgViewMatrixTask_6_1->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrixTask_6_1->Columns[col]->Index + 1);
 				   }
 			   }
 		   }
@@ -599,20 +372,20 @@ namespace CppCLRWinFormsProject
 		   System::Void btnGetMinValueInMatrixTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
 			   //проверяем заполнена ли матрица
-			   if (!isFillMatrix())
+			   if (!isFillMatrixTask_6_1())
 				   return;
 
 			   //лист для минимальных элементов в строках матрицы
 			   System::Collections::Generic::List<int>^ minValues = gcnew System::Collections::Generic::List<int>();
 
-			   for (int row = 0; row < countRowMatrix; row++)
+			   for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			   {
 				   System::Collections::Generic::List<int>^ rowValues = gcnew System::Collections::Generic::List<int>();
 
-				   for (int col = 0; col < countColMatrix; col++)
+				   for (int col = 0; col < countColMatrixTask_6_1; col++)
 				   {
 					   //добавляе мвсе элементы строки в лист
-					   rowValues->Add(matrixRundomValue[row, col]);
+					   rowValues->Add(matrixRundomValueTask_6_1[row, col]);
 				   }
 
 				   //сортируем лист с элементами строки, чтобы минимальный элемент был в самом начале
@@ -627,16 +400,16 @@ namespace CppCLRWinFormsProject
 
 
 
-			   for (int row = 0; row < countRowMatrix; row++)
+			   for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			   {
-				   for (int col = 0; col < countColMatrix; col++)
+				   for (int col = 0; col < countColMatrixTask_6_1; col++)
 				   {
 					   //снимаем дефолтное выделение ячейки
-					   dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;
+					   dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = false;
 
 					   //выделяем ячейку с минимальным значением
-					   if (matrixRundomValue[row, col] == minValue)
-						   dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
+					   if (matrixRundomValueTask_6_1[row, col] == minValue)
+						   dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = true;
 				   }
 			   }
 
@@ -644,13 +417,13 @@ namespace CppCLRWinFormsProject
 		   }
 
 		   //проверка, что матрица заполнена
-		   Boolean isFillMatrix()
+		   Boolean isFillMatrixTask_6_1()
 		   {
-			   for (int row = 0; row < countRowMatrix; row++)
+			   for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			   {
-				   for (int col = 0; col < countColMatrix; col++)
+				   for (int col = 0; col < countColMatrixTask_6_1; col++)
 				   {
-					   if (matrixRundomValue[row, col] != 0)
+					   if (matrixRundomValueTask_6_1[row, col] != 0)
 					   {
 						   return true;
 					   }
@@ -664,7 +437,7 @@ namespace CppCLRWinFormsProject
 
 		   System::Void btnGetSumValueRowWithNegativeTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
-			   if (!isFillMatrix())
+			   if (!isFillMatrixTask_6_1())
 				   return;
 
 			   txtBxResultTask_6_1->Clear();
@@ -673,57 +446,57 @@ namespace CppCLRWinFormsProject
 
 			   for (int i = 0; i < rowNumbersWithNegative->Count; i++)
 			   {
-				   dtgViewMatrix->Rows[rowNumbersWithNegative[i]]->Selected = true;
+				   dtgViewMatrixTask_6_1->Rows[rowNumbersWithNegative[i]]->Selected = true;
 
 				   int sum = GetSumValueInRow(rowNumbersWithNegative[i]);
 				   txtBxResultTask_6_1->Text += "Сумма элементов в строке " + (rowNumbersWithNegative[i] + 1) + " равна: " + sum + "\r\n";
 			   }
 		   }
 
-		   private: int GetSumValueInRow(int numberRow)
-		   {
-			   int sum = 0;
+		private: int GetSumValueInRow(int numberRow)
+		{
+			int sum = 0;
 
-			   for (int col = 0; col < countColMatrix; col++)
-			   {				
-				   sum += matrixRundomValue[numberRow, col];
-			   }
+			for (int col = 0; col < countColMatrixTask_6_1; col++)
+			{
+				sum += matrixRundomValueTask_6_1[numberRow, col];
+			}
 
-			   return sum;
-		   }
+			return sum;
+		}
 
-		   private: System::Collections::Generic::List<int>^ GetNumRowWithNegativeValue()
-	       {
-		       System::Collections::Generic::List<int>^ rowNumbers = gcnew System::Collections::Generic::List<int>();
+		private: System::Collections::Generic::List<int>^ GetNumRowWithNegativeValue()
+		{
+			System::Collections::Generic::List<int>^ rowNumbers = gcnew System::Collections::Generic::List<int>();
 
-		       for (int row = 0; row < countRowMatrix; row++)
-		       {
-			       for (int col = 0; col < countColMatrix; col++)
-			       {
-				       //снимаем дефолтное выделение ячейки
-				       dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;
+			for (int row = 0; row < countRowMatrixTask_6_1; row++)
+			{
+				for (int col = 0; col < countColMatrixTask_6_1; col++)
+				{
+					//снимаем дефолтное выделение ячейки
+					dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = false;
 
-				      if (matrixRundomValue[row, col] < 0)
-				      {
-					      rowNumbers->Add(row);
-						  break;
-				      }
-			       }
-		       }
+					if (matrixRundomValueTask_6_1[row, col] < 0)
+					{
+						rowNumbers->Add(row);
+						break;
+					}
+				}
+			}
 
-		       return rowNumbers;
-	       }
+			return rowNumbers;
+		}
 
 		   System::Void btnGetAverageEvenValueTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
 		   {
-			   if (!isFillMatrix())
+			   if (!isFillMatrixTask_6_1())
 				   return;
 
 			   txtBxResultTask_6_1->Clear();
 			   //снимаем все выделения ячеек
-			   ClearSelectedDtgViewMatrix();			  
-			   
-			   System::Collections::Generic::List<double>^ averagesRow = GetAverageInRow();			  
+			   ClearSelectedDtgViewMatrixTask_6_1();
+
+			   System::Collections::Generic::List<double>^ averagesRow = GetAverageInRow();
 			   System::Collections::Generic::List<double>^ averagesCol = GetEvenValueInCol();
 
 			   System::Collections::Generic::List<double>^ averagesRowSorted = SortInsertion(averagesRow);
@@ -753,10 +526,10 @@ namespace CppCLRWinFormsProject
 					sum += values[i];
 				}
 
-				return (double)sum / values->Count;				
+				return (double)sum / values->Count;
 			}
 
-			private: System::Collections::Generic::List<double>^ SortInsertion(System::Collections::Generic::List<double>^ values) 
+			private: System::Collections::Generic::List<double>^ SortInsertion(System::Collections::Generic::List<double>^ values)
 			{
 				for (int i = 1; i < values->Count; i++)
 				{
@@ -774,50 +547,50 @@ namespace CppCLRWinFormsProject
 			}
 
 		   //возвращаем список средних арифметических по строкам для сортировки
-		   private: System::Collections::Generic::List<double>^ GetAverageInRow()
-		   {
-			   System::Collections::Generic::List<double>^ averagesRow = gcnew System::Collections::Generic::List<double>();
-			   System::Collections::Generic::List<int>^ evenValue = gcnew System::Collections::Generic::List<int>();
+			private: System::Collections::Generic::List<double>^ GetAverageInRow()
+			{
+				System::Collections::Generic::List<double>^ averagesRow = gcnew System::Collections::Generic::List<double>();
+				System::Collections::Generic::List<int>^ evenValue = gcnew System::Collections::Generic::List<int>();
 
-			   for (int row = 0; row < countRowMatrix; row++)
-			   {
-				   //на каждой итерации строки очищается список
-				   evenValue->Clear();
+				for (int row = 0; row < countRowMatrixTask_6_1; row++)
+				{
+					//на каждой итерации строки очищается список
+					evenValue->Clear();
 
-				   for (int col = 0; col < countColMatrix; col++)
-				   {	   
-					   if (matrixRundomValue[row, col] %  2 == 0)
-					   {
-						   //подсвкечиваем четные числа 
-						   dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
-						   evenValue->Add(matrixRundomValue[row, col]);						   
-					   }
-				   }
+					for (int col = 0; col < countColMatrixTask_6_1; col++)
+					{
+						if (matrixRundomValueTask_6_1[row, col] % 2 == 0)
+						{
+							//подсвкечиваем четные числа 
+							dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = true;
+							evenValue->Add(matrixRundomValueTask_6_1[row, col]);
+						}
+					}
 
-				   averagesRow->Add(GetAverage(evenValue));				  
-			   }
+					averagesRow->Add(GetAverage(evenValue));
+				}
 
-			   return averagesRow;
-		   }
+				return averagesRow;
+			}
 
-			//возвращаем список средних арифметических по столбцам для сортировки
+		   //возвращаем список средних арифметических по столбцам для сортировки
 			private: System::Collections::Generic::List<double>^ GetEvenValueInCol()
 			{
 				System::Collections::Generic::List<double>^ averagesCol = gcnew System::Collections::Generic::List<double>();
 				System::Collections::Generic::List<int>^ evenValue = gcnew System::Collections::Generic::List<int>();
 
-				for (int col = 0; col < countColMatrix; col++)
+				for (int col = 0; col < countColMatrixTask_6_1; col++)
 				{
 					//на каждой итерации столбца очищается список
 					evenValue->Clear();
 
-					for (int row = 0; row < countRowMatrix; row++)
-					{			
-						if (matrixRundomValue[row, col] % 2 == 0)
+					for (int row = 0; row < countRowMatrixTask_6_1; row++)
+					{
+						if (matrixRundomValueTask_6_1[row, col] % 2 == 0)
 						{
 							//подсвкечиваем четные числа 
-							dtgViewMatrix->Rows[row]->Cells[col]->Selected = true;
-							evenValue->Add(matrixRundomValue[row, col]);
+							dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = true;
+							evenValue->Add(matrixRundomValueTask_6_1[row, col]);
 						}
 					}
 
@@ -827,227 +600,267 @@ namespace CppCLRWinFormsProject
 				return averagesCol;
 			}
 
-			private: void ClearSelectedDtgViewMatrix() 
+		private: void ClearSelectedDtgViewMatrixTask_6_1()
+		{
+			for (int row = 0; row < countRowMatrixTask_6_1; row++)
 			{
-				for (int row = 0; row < countRowMatrix; row++)
+				for (int col = 0; col < countColMatrixTask_6_1; col++)
 				{
-					for (int col = 0; col < countColMatrix; col++)
-					{
-						//снимаем дефолтное выделение ячейки
-						dtgViewMatrix->Rows[row]->Cells[col]->Selected = false;						
-					}
+					//снимаем дефолтное выделение ячейки
+					dtgViewMatrixTask_6_1->Rows[row]->Cells[col]->Selected = false;
 				}
 			}
-		   
-#pragma endregion
+		}
 
-#pragma region Task_6_2
-		   System::Void btnGetNewStringTask_6_2_Click(System::Object^ sender, System::EventArgs^ e)
-		   {
-			   if (!isValidateN1N2(txtBxInputN1Task_6_2->Text, "N1"))
-				   return;
+		#pragma endregion
 
-			   if (!isValidateN1N2(txtBxInputN2Task_6_2->Text, "N2"))
-				   return;
+		#pragma region Task_6_2
+		   //заполнение матрицы
+		   System::Void btnFillArrValueTask_6_2_Click(System::Object^ sender, System::EventArgs^ e)
+		   {			   
+			   //снимаем все выделения ячеек
+			   ClearSelectedDtgViewMatrixTask_6_2();
 
-			   if (String::IsNullOrWhiteSpace(txtBxInputS1Task_6_2->Text))
+			   Random^ rand = gcnew Random();
+
+			   for (int row = 0; row < countRowMatrixTask_6_2; row++)
 			   {
-				   MessageBox::Show("Необходимо заполнить строку S1", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-			   if (String::IsNullOrWhiteSpace(txtBxInputS2Task_6_2->Text))
-			   {
-				   MessageBox::Show("Необходимо заполнить строку S2", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-			   int n1 = Convert::ToInt64(txtBxInputN1Task_6_2->Text);
-			   int n2 = Convert::ToInt64(txtBxInputN2Task_6_2->Text);
-
-			   String^ s1 = txtBxInputS1Task_6_2->Text;
-			   String^ s2 = txtBxInputS2Task_6_2->Text;
-
-			   if (s1->Length < n1)
-			   {
-				   MessageBox::Show("Длина строки S1 не может быть меньше N1", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-			   if (s2->Length < n2)
-			   {
-				   MessageBox::Show("Длина строки S2 не может быть меньше N2", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-			   String^ substrS1 = s1->Substring(0, n1);
-			   String^ substrS2 = s2->Substring(s2->Length - n2);
-
-			   txtBxResultTask_6_2->Text = substrS1 + substrS2;
-		   }
-
-		   Boolean isValidateN1N2(String^ n, String^ nameN)
-		   {
-			   int parseResult;
-
-			   if (String::IsNullOrWhiteSpace(n))
-			   {
-				   MessageBox::Show("Необходимо заполнить число " + nameN, "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   if (!int::TryParse(n, parseResult))
-			   {
-				   MessageBox::Show(nameN + " должно быть целым числом", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   if (parseResult < 0 || parseResult == 0)
-			   {
-				   MessageBox::Show(nameN + " должно быть больше 0", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   return true;
-		   }
-#pragma endregion
-
-#pragma region Task_6_3
-		   System::Void btnDeleteSpacesTask_6_3_Click(System::Object^ sender, System::EventArgs^ e)
-		   {
-			   String^ str = txtBxInputStringWithSpacesTask_6_3->Text;
-
-			   if (String::IsNullOrWhiteSpace(str))
-			   {
-				   MessageBox::Show("Необходимо ввести строку", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return;
-			   }
-
-			   cli::array<System::String^>^ strArray = str->Split(' ');
-
-			   txtBxResultTask_6_3->Text = strArray->Length.ToString();
-			   System::Collections::Generic::List<String^>^ strList = gcnew System::Collections::Generic::List<String^>(strArray);
-			   System::Predicate<String^>^ spacePredicate = gcnew System::Predicate<String^>(this, &Form1::IsNullOrSpace);
-			   strList->RemoveAll(spacePredicate);
-
-			   System::Text::StringBuilder^ strBuilder = gcnew System::Text::StringBuilder();
-
-			   for (int i = 0; i < strList->Count; i++)
-			   {
-				   if ((i + 1 < strList->Count) && (strList[i + 1] == "," || strList[i + 1] == "?" || strList[i + 1] == "!" || strList[i + 1] == "\"" || strList[i + 1] == "."))
+				   for (int col = 0; col < countColMatrixTask_6_2; col++)
 				   {
-					   strBuilder->Append(strList[i]);
-				   }
-				   else
-				   {
-					   strBuilder->Append(strList[i] + " ");
+					   matrixRundomValueTask_6_2[row, col] = rand->Next(int::MinValue, int::MaxValue);
 				   }
 			   }
 
-			   //txtBxResultTask_6_3->Text = String::Join(" ", strList);
-			   txtBxResultTask_6_3->Text = strBuilder->ToString();
+			   for (int row = 0; row < countRowMatrixTask_6_2; row++)
+			   {
+				   for (int col = 0; col < countColMatrixTask_6_2; col++)
+				   {
+					   //заполняем датагрид
+					   dtgViewMatrixTask_6_2[col, row]->Value = matrixRundomValueTask_6_2[row, col];
+					   //нумеруем строки
+					   dtgViewMatrixTask_6_2->Rows[row]->HeaderCell->Value = String::Format("{0}", dtgViewMatrixTask_6_2->Rows[row]->Index + 1);
+					   //нумеруем столбцы
+					   dtgViewMatrixTask_6_2->Columns[col]->HeaderCell->Value = String::Format("{0}", dtgViewMatrixTask_6_2->Columns[col]->Index + 1);
+				   }
+			   }
 		   }
 
-	private: System::Boolean IsNullOrSpace(String^ str)
-	{
-		return String::IsNullOrWhiteSpace(str);
-	}
-#pragma endregion
-
-#pragma region Task_6_4
-		   System::Void btnEncryptStrTask_6_4_Click(System::Object^ sender, System::EventArgs^ e)
+		   System::Void btnCountPrimeValueTask_6_2_Click(System::Object^ sender, System::EventArgs^ e) 
 		   {
-			   if (!isValidateK(txtBxInputKTask_6_4->Text))
+			   if (!isFillMatrixTask_6_2())
 				   return;
 
-			   int k = Convert::ToInt32(txtBxInputKTask_6_4->Text);
-			   String^ str = txtBxInputStrTask_6_4->Text;
+			   ClearSelectedDtgViewMatrixTask_6_2();
 
-			   if (!isValidateStr(str))
-				   return;
+			   int countPrimeValue = 0;
 
-			   cli::array<Char>^ arrayChar = str->ToCharArray();
-
-			   for (int i = 0; i < arrayChar->Length; i++)
+			   for (int row = 0; row < countRowMatrixTask_6_2; row++)
 			   {
-				   //отсекаем символы
-				   if (arrayChar[i] >= 32 && arrayChar[i] <= 64)
-					   continue;
-
-				   //строчные буквы если переполнение
-				   if (arrayChar[i] >= 1072 && arrayChar[i] <= 1103)
+				   for (int col = 0; col < countColMatrixTask_6_2; col++)
 				   {
-					   if ((arrayChar[i] + k) > 1103)
-					   {
-						   arrayChar[i] = 1071 + Math::Abs(1103 - arrayChar[i] + k);
-						   continue;
+					   if (isPrime(matrixRundomValueTask_6_2[row, col]))
+					   {		
+						   //выдеояфем ячейку
+						   dtgViewMatrixTask_6_2->Rows[row]->Cells[col]->Selected = true;
+						   countPrimeValue++;
 					   }
 				   }
+			   }
 
-				   //заглавные буквы если переполнение
-				   if (arrayChar[i] >= 1040 && arrayChar[i] <= 1071)
+			   txtBxResultTask_6_2->Clear();
+			   txtBxResultTask_6_2->Text = "Количество элементов матрицы, содержащих простые числа равно: " + countPrimeValue;
+		   }
+
+		   //проверка, что матрица заполнена
+		   Boolean isFillMatrixTask_6_2()
+		   {
+			   for (int row = 0; row < countRowMatrixTask_6_2; row++)
+			   {
+				   for (int col = 0; col < countColMatrixTask_6_2; col++)
 				   {
-					   if ((arrayChar[i] + k) > 1071)
+					   if (matrixRundomValueTask_6_2[row, col] != 0)
 					   {
-						   arrayChar[i] = 1039 + Math::Abs(1071 - arrayChar[i] + k);
-						   continue;
+						   return true;
 					   }
-				   }
 
-				   arrayChar[i] = arrayChar[i] + k;
+				   }
 			   }
 
-			   String^ result = gcnew String(arrayChar);
-			   txtBxResultTask_6_4->Text = result;
+			   MessageBox::Show("Необходимо заполнить матрицу", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			   return false;
 		   }
 
-		   Boolean isValidateK(String^ k)
+		   //является ли число простым
+		   private: Boolean isPrime(int value) 
 		   {
-			   int parseResult;
-
-			   if (String::IsNullOrWhiteSpace(k))
+			   for (int i = 2; i <= value / 2; i++)
 			   {
-				   MessageBox::Show("Необходимо ввести число k", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   if (!int::TryParse(k, parseResult))
-			   {
-				   MessageBox::Show("Число k должно быть целым числом", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
-			   }
-
-			   if (parseResult < 0 || parseResult > 10)
-			   {
-				   MessageBox::Show("Число k должно быть больше 0  и меньше 10", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
+			      if (value % i == 0)
+				  {
+					  return false;					
+			      }
 			   }
 
 			   return true;
 		   }
 
-		   Boolean isValidateStr(String^ str)
+		   //снимаем выделение ячеек
+		   private: void ClearSelectedDtgViewMatrixTask_6_2()
 		   {
-			   if (String::IsNullOrWhiteSpace(str))
+			   for (int row = 0; row < countRowMatrixTask_6_2; row++)
 			   {
-				   MessageBox::Show("Нужно ввести строку", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				   return false;
+				    for (int col = 0; col < countColMatrixTask_6_2; col++)
+					{
+						//снимаем дефолтное выделение ячейки
+						dtgViewMatrixTask_6_2->Rows[row]->Cells[col]->Selected = false;
+					}
 			   }
-
-			   for (int i = 0; i < str->Length; i++)
-			   {
-				   int code = Convert::ToInt64(str[i]);
-
-				   if ((code > 65 && code < 1040) || code > 1103)
-				   {
-					   MessageBox::Show("Нужно ввести строку на русском языке без буквы \"ё\"", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
-					   return false;
-				   }
-			   }
-
-			   return true;
 		   }
-#pragma endregion
+
+			System::Void btnMaxMainSideDiagonalTask_6_2_Click(System::Object^ sender, System::EventArgs^ e)
+			{
+				if (!isFillMatrixTask_6_2())
+					return;
+
+				ClearSelectedDtgViewMatrixTask_6_2();
+				txtBxResultTask_6_2->Clear();
+
+				//получаем элементы главной диагонали
+				System::Collections::Generic::List<int>^ valuesMainDiagonal = GetValueMainDiagonal();
+				//сортируем по возрастнаию, для получения максимального элементов
+				valuesMainDiagonal->Sort();
+				txtBxResultTask_6_2->Text += "Максимальный элемент главной диагонали матрицы равен : " + valuesMainDiagonal[valuesMainDiagonal->Count - 1] + "\r\n";
+
+				//получаем элементы побочной диагонали
+				System::Collections::Generic::List<int>^ valuesSaidDiagonal = GetValueSaidDiagonal();
+				//сортируем по возрастнаию, для получения максимального элементов
+				valuesSaidDiagonal->Sort();
+				txtBxResultTask_6_2->Text += "Максимальный элемент побочной диагонали матрицы равен : " + valuesSaidDiagonal[valuesSaidDiagonal->Count - 1] + "\r\n";
+			}
+
+			//получить элементы главной диагонали
+			private: System::Collections::Generic::List<int>^ GetValueMainDiagonal() 
+			{
+				System::Collections::Generic::List<int>^ valuesMainDiagonal = gcnew System::Collections::Generic::List<int>();
+				
+				//i - индекс строки и столбца, индексы в диагонали равны
+				for (int i = 0; i < countColMatrixTask_6_2; i++)
+				{
+					dtgViewMatrixTask_6_2->Rows[i]->Cells[i]->Selected = true;
+					valuesMainDiagonal->Add(matrixRundomValueTask_6_2[i, i]);
+				}				
+
+				return valuesMainDiagonal;
+			}
+
+			//получить элементы побочной диагонали
+			private: System::Collections::Generic::List<int>^ GetValueSaidDiagonal()
+			{
+				System::Collections::Generic::List<int>^ valuesSaidDiagonal = gcnew System::Collections::Generic::List<int>();
+
+				//i - индекс строки и столбца, индексы в диагонали равны
+				for (int col = countColMatrixTask_6_2 - 1, row = 0; col >= 0; col--, row++)
+				{
+					dtgViewMatrixTask_6_2->Rows[row]->Cells[col]->Selected = true;
+					valuesSaidDiagonal->Add(matrixRundomValueTask_6_2[row, col]);
+				}
+
+				return valuesSaidDiagonal;
+			}
+
+			System::Void btnAverageQuadraticTask_6_2_Click(System::Object^ sender, System::EventArgs^ e) 
+			{
+				if (!isFillMatrixTask_6_2())
+					return;
+
+				ClearSelectedDtgViewMatrixTask_6_2();
+				txtBxResultTask_6_2->Clear();
+
+				System::Collections::Generic::List<double>^ averagesQuaraticEvenCol = BubbleSort(GetAverageEvenCol());
+				System::Collections::Generic::List<double>^ averagesQuaraticNotEvenRow = BubbleSort(GetAverageNotEvenRow());
+
+				txtBxResultTask_6_2->Text += "Средние квадратичные значения четных столбцов матрицы, отсортированные по возрастнаю: \r\n";
+
+				for (int i = 0; i < averagesQuaraticEvenCol->Count; i++)
+				{
+					txtBxResultTask_6_2->Text += Math::Round(averagesQuaraticEvenCol[i], 2) + "\r\n";
+				}
+
+				txtBxResultTask_6_2->Text += "\r\nСредние квадратичные значения нечетных строк матрицы, отсортированные по возрастнаю: \r\n";
+
+				for (int i = 0; i < averagesQuaraticNotEvenRow->Count; i++)
+				{
+					txtBxResultTask_6_2->Text += Math::Round(averagesQuaraticNotEvenRow[i], 2) + "\r\n";
+				}
+			}
+
+			private: System::Collections::Generic::List<double>^ GetAverageEvenCol()
+			{
+				System::Collections::Generic::List<double>^ averageValues = gcnew System::Collections::Generic::List<double>();
+				
+				for (int col = 1; col < countColMatrixTask_6_2; col=col+2)
+				{
+					double sumPowEvenCol = 0;
+					//количество элементов равно количеству строк
+					int countValue = 12;
+
+					for (int row = 0; row < countRowMatrixTask_6_2; row++)
+					{
+						//выделяем ячейки
+						dtgViewMatrixTask_6_2->Rows[row]->Cells[col]->Selected = true;
+						//сумма квадратов элементов четных столбцов
+						sumPowEvenCol += Math::Pow(matrixRundomValueTask_6_2[row, col], 2);						
+					}
+
+					averageValues->Add(Math::Sqrt(sumPowEvenCol / countValue));
+				}			
+
+				return averageValues;
+			}
+
+			private: System::Collections::Generic::List<double>^ GetAverageNotEvenRow()
+			{
+				System::Collections::Generic::List<double>^ averageValues = gcnew System::Collections::Generic::List<double>();
+
+				for (int row = 0; row < countColMatrixTask_6_2; row = row + 2)
+				{
+					double sumPowNotEvenRow = 0;
+					//количество элементов равно количеству строк
+					int countValue = 12;
+
+					for (int col = 0; col < countColMatrixTask_6_2; col++)
+					{
+						//выделяем ячейки
+						dtgViewMatrixTask_6_2->Rows[row]->Cells[col]->Selected = true;
+						//сумма квадратов элементов четных столбцов
+						sumPowNotEvenRow += Math::Pow(matrixRundomValueTask_6_2[row, col], 2);
+					}
+
+					averageValues->Add(Math::Sqrt(sumPowNotEvenRow / countValue));
+				}
+
+				return averageValues;
+			}
+
+			private: System::Collections::Generic::List<double>^ BubbleSort(System::Collections::Generic::List<double>^ values) 
+			{
+				for (int i = 0; i < values->Count; i++)
+				{
+					for (int j = 0; j < values->Count - 1; j++)
+					{
+						if (values[j] > values[j + 1])
+						{
+							int temp = values[j];
+							values[j] = values[j + 1];
+							values[j + 1] = temp;
+						}
+					}
+				}
+
+				return values;
+			}
+		  
+		#pragma endregion
 	};
-};
+}
 
