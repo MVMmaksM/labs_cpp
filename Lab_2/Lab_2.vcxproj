@@ -150,6 +150,8 @@
   <ItemGroup>
     <Image Include="app.ico" />
     <Image Include="Task_6_1.jpg" />
+    <Image Include="Task_6_2.jpg" />
+    <Image Include="Task_6_3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
