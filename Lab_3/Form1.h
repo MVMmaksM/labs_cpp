@@ -211,7 +211,7 @@ namespace CppCLRWinFormsProject {
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-				this->ClientSize = System::Drawing::Size(873, 448);
+				this->ClientSize = System::Drawing::Size(890, 490);
 				this->Controls->Add(this->groupBoxDescriptionTask_6);
 				this->Controls->Add(this->groupBoxSolutionTask_6);
 				this->Name = L"Lab_3";
@@ -220,8 +220,8 @@ namespace CppCLRWinFormsProject {
 				this->groupBoxDescriptionTask_6->PerformLayout();
 				this->groupBoxSolutionTask_6->ResumeLayout(false);
 				this->groupBoxSolutionTask_6->PerformLayout();
-				this->MaximumSize = System::Drawing::Size(873, 448);
-				this->MinimumSize = System::Drawing::Size(873, 448);
+				this->MaximumSize = System::Drawing::Size(890, 490);
+				this->MinimumSize = System::Drawing::Size(890, 490);
 				this->ResumeLayout(false);
 			}
 	#pragma endregion

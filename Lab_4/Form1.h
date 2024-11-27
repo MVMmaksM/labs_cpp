@@ -127,7 +127,7 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_1->Padding = System::Windows::Forms::Padding(3);
 			   this->tabPageTask_6_1->Size = System::Drawing::Size(840, 442);
 			   this->tabPageTask_6_1->TabIndex = 0;
-			   this->tabPageTask_6_1->Text = L"Task_6.1";
+			   this->tabPageTask_6_1->Text = L"Задание №1";
 			   this->tabPageTask_6_1->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_1			
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxResultTask_6_1);
@@ -238,7 +238,7 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_2->Padding = System::Windows::Forms::Padding(3);
 			   this->tabPageTask_6_2->Size = System::Drawing::Size(840, 442);
 			   this->tabPageTask_6_2->TabIndex = 1;
-			   this->tabPageTask_6_2->Text = L"Task_6.2";
+			   this->tabPageTask_6_2->Text = L"Задание №2";
 			   this->tabPageTask_6_2->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_2				 
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxResultTask_6_2);

@@ -66,6 +66,7 @@ namespace CppCLRWinFormsProject
 		private: System::Windows::Forms::Label^ labelYTask_6_1;
 		private: System::Windows::Forms::Label^ labelPointXTask_6_2;
 		private: System::Windows::Forms::Label^ labelPointYTask_6_2;
+		private: System::Windows::Forms::Label^ labelResultTask_6_2;
 		private: System::Windows::Forms::Label^ labelInputXnTask_6_3;
 		private: System::Windows::Forms::Label^ labelInputXkTask_6_3;
 		private: System::Windows::Forms::Label^ labelInputHTask_6_3;
@@ -141,6 +142,7 @@ namespace CppCLRWinFormsProject
 			   this->labelYTask_6_1 = (gcnew System::Windows::Forms::Label());
 			   this->labelPointXTask_6_2 = (gcnew System::Windows::Forms::Label());
 			   this->labelPointYTask_6_2 = (gcnew System::Windows::Forms::Label());
+			   this->labelResultTask_6_2 = (gcnew System::Windows::Forms::Label());
 			   this->labelInputXnTask_6_3 = (gcnew System::Windows::Forms::Label());
 			   this->labelInputXkTask_6_3 = (gcnew System::Windows::Forms::Label());
 			   this->labelInputHTask_6_3 = (gcnew System::Windows::Forms::Label());
@@ -167,7 +169,7 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_1->Padding = System::Windows::Forms::Padding(3);
 			   this->tabPageTask_6_1->Size = System::Drawing::Size(840, 442);
 			   this->tabPageTask_6_1->TabIndex = 0;
-			   this->tabPageTask_6_1->Text = L"Task_6.1";
+			   this->tabPageTask_6_1->Text = L"Задание №1";
 			   this->tabPageTask_6_1->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_1	
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->btnGetValueFuncTask_6_1);
@@ -177,7 +179,7 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxSolutionTask_6_1->Controls->Add(this->txtBxYTask_6_1);
 			   this->groupBoxSolutionTask_6_1->Location = System::Drawing::Point(8, 310);
 			   this->groupBoxSolutionTask_6_1->Name = L"groupBox2";
-			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(1330, 140);
+			   this->groupBoxSolutionTask_6_1->Size = System::Drawing::Size(960, 320);
 			   this->groupBoxSolutionTask_6_1->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_1->TabStop = false;
 			   this->groupBoxSolutionTask_6_1->Text = L"Решение";
@@ -187,7 +189,7 @@ namespace CppCLRWinFormsProject
 			   this->dtgViewResultTask_6_3->Columns[0]->Name = "y";
 			   this->dtgViewResultTask_6_3->Columns[1]->Name = "x";
 			   this->dtgViewResultTask_6_3->Location = System::Drawing::Point(5, 70);
-			   this->dtgViewResultTask_6_3->Size = System::Drawing::Size(800, 240);			 
+			   this->dtgViewResultTask_6_3->Size = System::Drawing::Size(950, 240);			 
 			   // labelInputXnTask_6_3				
 			   this->labelInputXnTask_6_3->AutoSize = true;
 			   this->labelInputXnTask_6_3->Location = System::Drawing::Point(8, 15);
@@ -239,11 +241,11 @@ namespace CppCLRWinFormsProject
 			   this->labelInputXTask_6_1->Text = L"Введите значение X";
 			   // labelYTask_6_1				
 			   this->labelYTask_6_1->AutoSize = true;
-			   this->labelYTask_6_1->Location = System::Drawing::Point(320, 20);
+			   this->labelYTask_6_1->Location = System::Drawing::Point(335, 20);
 			   this->labelYTask_6_1->Name = L"labelYTask_6_1";
 			   this->labelYTask_6_1->Size = System::Drawing::Size(172, 13);
 			   this->labelYTask_6_1->TabIndex = 0;
-			   this->labelYTask_6_1->Text = L"Значение функции Y равно";
+			   this->labelYTask_6_1->Text = L"Значение функции Y";
 			   // labelPointXTask_6_2				
 			   this->labelPointXTask_6_2->AutoSize = true;
 			   this->labelPointXTask_6_2->Location = System::Drawing::Point(8, 15);
@@ -258,6 +260,13 @@ namespace CppCLRWinFormsProject
 			   this->labelPointYTask_6_2->Size = System::Drawing::Size(172, 13);
 			   this->labelPointYTask_6_2->TabIndex = 0;
 			   this->labelPointYTask_6_2->Text = L"Введите координату точки по Y";
+			   // labelResultTask_6_2				
+			   this->labelResultTask_6_2->AutoSize = true;
+			   this->labelResultTask_6_2->Location = System::Drawing::Point(700, 15);
+			   this->labelResultTask_6_2->Name = L"labelResultTask_6_2";
+			   this->labelResultTask_6_2->Size = System::Drawing::Size(172, 13);
+			   this->labelResultTask_6_2->TabIndex = 0;
+			   this->labelResultTask_6_2->Text = L"Результат";
 			   // btnGetValueFuncTask_6_1			
 			   this->btnGetValueFuncTask_6_1->Location = System::Drawing::Point(130, 33);
 			   this->btnGetValueFuncTask_6_1->Name = L"btnGetValueFuncTask_6_1";
@@ -272,21 +281,21 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_1->Controls->Add(this->pctBoxTask_6_1);
 			   this->groupBoxDescriptionTask_6_1->Location = System::Drawing::Point(8, 6);
 			   this->groupBoxDescriptionTask_6_1->Name = L"groupBox1";
-			   this->groupBoxDescriptionTask_6_1->Size = System::Drawing::Size(600, 300);
+			   this->groupBoxDescriptionTask_6_1->Size = System::Drawing::Size(960, 300);
 			   this->groupBoxDescriptionTask_6_1->TabIndex = 0;
 			   this->groupBoxDescriptionTask_6_1->TabStop = false;
 			   this->groupBoxDescriptionTask_6_1->Text = L"Описание задачи";
 			   //pctBoxTask_6_1
 			   this->pctBoxTask_6_1->Image = Image::FromFile(System::IO::Path::Combine(Environment::CurrentDirectory, "Task_6_1.jpg"));
-			   this->pctBoxTask_6_1->Location = System::Drawing::Point(5, 50);
+			   this->pctBoxTask_6_1->Location = System::Drawing::Point(220, 50);
 			   this->pctBoxTask_6_1->Size = System::Drawing::Size(1000, 300);
 			   //pctBoxTask_6_2
 			   this->pctBoxTask_6_2->Image = Image::FromFile(System::IO::Path::Combine(Environment::CurrentDirectory, "Task_6_2.jpg"));
-			   this->pctBoxTask_6_2->Location = System::Drawing::Point(5, 50);
+			   this->pctBoxTask_6_2->Location = System::Drawing::Point(200, 50);
 			   this->pctBoxTask_6_2->Size = System::Drawing::Size(1000, 300);
 			   //pctBoxTask_6_3
 			   this->pctBoxTask_6_3->Image = Image::FromFile(System::IO::Path::Combine(Environment::CurrentDirectory, "Task_6_3.jpg"));
-			   this->pctBoxTask_6_3->Location = System::Drawing::Point(5, 50);
+			   this->pctBoxTask_6_3->Location = System::Drawing::Point(200, 50);
 			   this->pctBoxTask_6_3->Size = System::Drawing::Size(1000, 300);
 			   // txtBxDescriptionTask_6_1				 
 			   this->txtBxDescriptionTask_6_1->BackColor = System::Drawing::SystemColors::ControlLightLight;
@@ -321,7 +330,7 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_2->Padding = System::Windows::Forms::Padding(3);
 			   this->tabPageTask_6_2->Size = System::Drawing::Size(840, 442);
 			   this->tabPageTask_6_2->TabIndex = 1;
-			   this->tabPageTask_6_2->Text = L"Task_6.2";
+			   this->tabPageTask_6_2->Text = L"Задание №2";
 			   this->tabPageTask_6_2->UseVisualStyleBackColor = true;
 			   //tabPageTask_6_3			
 			   this->tabPageTask_6_3->Controls->Add(this->groupBoxDescriptionTask_6_3);	
@@ -331,18 +340,19 @@ namespace CppCLRWinFormsProject
 			   this->tabPageTask_6_3->Padding = System::Windows::Forms::Padding(3);
 			   this->tabPageTask_6_3->Size = System::Drawing::Size(840, 442);
 			   this->tabPageTask_6_3->TabIndex = 1;
-			   this->tabPageTask_6_3->Text = L"Task_6.3";
+			   this->tabPageTask_6_3->Text = L"Задание №3";
 			   this->tabPageTask_6_3->UseVisualStyleBackColor = true;
 			   // groupBoxSolutionTask_6_2		 
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->btnPointFallsFigureTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelPointYTask_6_2);
+			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelResultTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->labelPointXTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputPointXTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxInputPointYTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Controls->Add(this->txtBxResultTask_6_2);
 			   this->groupBoxSolutionTask_6_2->Location = System::Drawing::Point(8, 310);
 			   this->groupBoxSolutionTask_6_2->Name = L"groupBox4";
-			   this->groupBoxSolutionTask_6_2->Size = System::Drawing::Size(930, 100);
+			   this->groupBoxSolutionTask_6_2->Size = System::Drawing::Size(960, 320);
 			   this->groupBoxSolutionTask_6_2->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_2->TabStop = false;
 			   this->groupBoxSolutionTask_6_2->Text = L"Решение";
@@ -363,12 +373,12 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxSolutionTask_6_3->Controls->Add(this->dtgViewResultTask_6_3);
 			   this->groupBoxSolutionTask_6_3->Location = System::Drawing::Point(8, 310);
 			   this->groupBoxSolutionTask_6_3->Name = L"groupBoxSolutionTask_6_3";
-			   this->groupBoxSolutionTask_6_3->Size = System::Drawing::Size(930, 400);
+			   this->groupBoxSolutionTask_6_3->Size = System::Drawing::Size(960, 320);
 			   this->groupBoxSolutionTask_6_3->TabIndex = 1;
 			   this->groupBoxSolutionTask_6_3->TabStop = false;
 			   this->groupBoxSolutionTask_6_3->Text = L"Решение";
 			   // btnGetPerimeterTask_6_2				
-			   this->btnPointFallsFigureTask_6_2->Location = System::Drawing::Point(350, 28);
+			   this->btnPointFallsFigureTask_6_2->Location = System::Drawing::Point(360, 28);
 			   this->btnPointFallsFigureTask_6_2->Name = L"btnFillArrValueTask_6_2";
 			   this->btnPointFallsFigureTask_6_2->Size = System::Drawing::Size(150, 23);
 			   this->btnPointFallsFigureTask_6_2->TabIndex = 3;
@@ -388,7 +398,7 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_2->Controls->Add(this->pctBoxTask_6_2);
 			   this->groupBoxDescriptionTask_6_2->Location = System::Drawing::Point(8, 6);
 			   this->groupBoxDescriptionTask_6_2->Name = L"groupBox3";
-			   this->groupBoxDescriptionTask_6_2->Size = System::Drawing::Size(1330, 300);
+			   this->groupBoxDescriptionTask_6_2->Size = System::Drawing::Size(960, 300);
 			   this->groupBoxDescriptionTask_6_2->TabIndex = 0;
 			   this->groupBoxDescriptionTask_6_2->TabStop = false;
 			   this->groupBoxDescriptionTask_6_2->Text = L"Описание задачи";
@@ -396,7 +406,7 @@ namespace CppCLRWinFormsProject
 			   this->groupBoxDescriptionTask_6_3->Controls->Add(this->pctBoxTask_6_3);
 			   this->groupBoxDescriptionTask_6_3->Location = System::Drawing::Point(8, 6);
 			   this->groupBoxDescriptionTask_6_3->Name = L"groupBoxDescriptionTask_6_3";
-			   this->groupBoxDescriptionTask_6_3->Size = System::Drawing::Size(1330, 300);
+			   this->groupBoxDescriptionTask_6_3->Size = System::Drawing::Size(960, 300);
 			   this->groupBoxDescriptionTask_6_3->TabIndex = 0;
 			   this->groupBoxDescriptionTask_6_3->TabStop = false;
 			   this->groupBoxDescriptionTask_6_3->Text = L"Описание задачи";
@@ -450,9 +460,9 @@ namespace CppCLRWinFormsProject
 			   this->txtBxInputPointYTask_6_2->Size = System::Drawing::Size(165, 20);
 			   this->txtBxInputPointYTask_6_2->TabIndex = 0;
 			   // txtBxResultTask_6_2			
-			   this->txtBxResultTask_6_2->Location = System::Drawing::Point(600, 30);
+			   this->txtBxResultTask_6_2->Location = System::Drawing::Point(530, 29);
 			   this->txtBxResultTask_6_2->Name = L"txtBxResultTask_6_2";
-			   this->txtBxResultTask_6_2->Size = System::Drawing::Size(300, 20);
+			   this->txtBxResultTask_6_2->Size = System::Drawing::Size(420, 20);
 			   this->txtBxResultTask_6_2->TabIndex = 0;
 			   // 
 			   // 
@@ -479,7 +489,7 @@ namespace CppCLRWinFormsProject
 			   this->MinimumSize = System::Drawing::Size(1000, 708);
 			   this->MaximumSize = System::Drawing::Size(1000, 708);
 			   this->ResumeLayout(false);
-		   }
+		   }		  
 
 			#pragma region Task_6_1
 		   System::Void btnGetValueFuncTask_6_1_Click(System::Object^ sender, System::EventArgs^ e)
@@ -671,16 +681,128 @@ namespace CppCLRWinFormsProject
 			   double b = Convert::ToDouble(strB);
 			   double c = Convert::ToDouble(strC);
 
+			   //очищаем датагрид
+			   dtgViewResultTask_6_3->Rows->Clear();
+
 			   if (c < 0 && b != 0) 
 			   {
-				  
-				   for (double i = xn, row = 0; i <= xk ; i++, row++)
+				   //если конечное значение x больше или равно начальному
+				   if (xk >= xn) 
 				   {
-					   dtgViewResultTask_6_3->Rows->Add();
-					   //значение функции y
-					   dtgViewResultTask_6_3[0, row] ->Value = a * Math::Pow(i, 2) + Math::Pow(b, 2) * i;
-					   //значение x
-					   dtgViewResultTask_6_3[1, row] ->Value = i;
+					   for (double i = xn, row = 0; i <= xk; i++, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+						   //значение функции y
+						   dtgViewResultTask_6_3[0, row]->Value = Math::Round(a * Math::Pow(i, 2) + Math::Pow(b, 2) * i, 2);
+						   //значение x
+						   dtgViewResultTask_6_3[1, row]->Value = i;
+					   }
+				   }
+				   //если конечное меньше или равно начальному 
+				   else if(xk <= xn)
+				   {
+					   for (double i = xn, row = 0; i >= xk; i--, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+						   //значение функции y
+						   dtgViewResultTask_6_3[0, row]->Value = Math::Round(a * Math::Pow(i, 2) + Math::Pow(b, 2) * i, 2);
+						   //значение x
+						   dtgViewResultTask_6_3[1, row]->Value = i;
+					   }
+				   }				  
+			   }
+			   else if(c > 0 && b == 0)
+			   {
+				   //если конечное значение x больше или равно начальному
+				   if (xk >= xn)
+				   {
+					   for (double i = xn, row = 0; i <= xk; i++, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+
+						   if ((i + c) == 0)
+						   {   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = "Деление на 0";
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+						   else
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = Math::Round((i + a) / (i + c), 2);
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }						   
+					   }
+				   }
+				   //если конечное меньше или равно начальному 
+				   else if (xk <= xn)
+				   {
+					   for (double i = xn, row = 0; i >= xk; i--, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+
+						   if ((i + c) == 0)
+						   {   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = "Деление на 0";
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+						   else
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = Math::Round((i + a) / (i + c), 2);
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+					   }
+				   }
+			   }
+			   else
+			   {
+				   //если конечное значение x больше или равно начальному
+				   if (xk >= xn)
+				   {
+					   for (double i = xn, row = 0; i <= xk; i++, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+
+						   if (c == 0) 
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = "Деление на 0";
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+						   else
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = Math::Round(i / c, 2);
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }						   
+					   }
+				   }
+				   //если конечное меньше или равно начальному 
+				   else if (xk <= xn)
+				   {
+					   for (double i = xn, row = 0; i >= xk; i--, row++)
+					   {
+						   dtgViewResultTask_6_3->Rows->Add();
+
+						   if (c == 0)
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = "Деление на 0";
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+						   else
+						   {
+							   //значение функции y
+							   dtgViewResultTask_6_3[0, row]->Value = Math::Round(i / c, 2);
+							   //значение x
+							   dtgViewResultTask_6_3[1, row]->Value = i;
+						   }
+					   }
 				   }
 			   }
 		   }
